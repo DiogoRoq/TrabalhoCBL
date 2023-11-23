@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site informativo</title>
+    <link rel="stylesheet" href="Style.css">
     <style>
         table {
             width: 80%;
-            height: 200px;
+            height: 300px; /* Ajuste a altura conforme necessário */
             border-collapse: collapse;
             margin: 20px;
         }
 
-        table, td {
-            border: 1px solid black;
+        table, th, td {
+            border: 2px solid black;
         }
 
-        td {
+        th, td {
             padding: 15px;
-            text-align: center;
+            text-align: left;
+        }
+
+        td a {
+            display: block;
+            text-align: right; /* Ajuste para alinhar o link à esquerda dentro da célula */
+            vertical-align: bottom; /* Ajuste para alinhar o link perto da linha inferior da célula */
         }
     </style>
 </head>
@@ -28,13 +35,23 @@
 
     <table>
         <tr>
-            <td><a href="noticia1.html" target="_blank">Notícia 1</a></td>
-            <td><a href="noticia2.html" target="_blank">Notícia 2</a></td>
+            <th>Notícia 1</th>
+            <td><a href="noticia1.html" target="_blank">Carregue aqui</a></td>
         </tr>
         <tr>
-            <td><a href="noticia3.html" target="_blank">Notícia 3</a></td>
-            <td><a href="noticia4.html" target="_blank">Notícia 4</a></td>
+            <th>Notícia 2</th>
+            <td><a href="noticia2.html" target="_blank">Carregue aqui</a></td>
+        </tr>
+        <tr>
+            <th>Notícia 3</th>
+            <td><a href="noticia3.html" target="_blank">Carregue aqui</a></td>
+        </tr>
+        <tr>
+            <th>Notícia 4</th>
+            <td><a href="noticia4.html" target="_blank">Carregue aqui</a></td>
         </tr>
     </table>
+    
+    <button href='opiniao.html'>Diga-nos a sua opinião</button>
 </body>
 </html>

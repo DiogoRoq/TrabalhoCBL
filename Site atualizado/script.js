@@ -20,3 +20,4 @@ document.querySelectorAll('#news-list table tr').forEach(row => {
 document.querySelectorAll('#news-list table a').forEach(link => {
     link.setAttribute('target', '_blank');
 });
+

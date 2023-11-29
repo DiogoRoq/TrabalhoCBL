@@ -7,17 +7,17 @@ document.querySelectorAll('nav ul li a').forEach(item => {
 });
 
 // Efeito de hover para linhas da tabela
-document.querySelectorAll('#news-list table tr').forEach(row => {
+document.querySelectorAll('#featured-news table tr').forEach(row => {
     row.addEventListener('mouseover', () => {
-        row.style.backgroundColor = '#cccccc';
+        row.style.backgroundColor = '#ccc';
     });
     row.addEventListener('mouseout', () => {
-        row.style.backgroundColor = '';
+        row.style.backgroundColor = ' #fff';
     });
 });
 
 // Abrir links em nova aba
-document.querySelectorAll('#news-list table a').forEach(link => {
+document.querySelectorAll('#featured-news table a').forEach(link => {
     link.setAttribute('target', '_blank');
 });
 

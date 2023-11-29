@@ -5,9 +5,10 @@ body {
 }
 
 header {
-    background-color: #4a4949;
+    background-color: rgb(27, 169, 27);
     color: white;
     padding: 10px 0;
+    font-size: 1.2em;
 }
 
 nav ul {
@@ -42,16 +43,14 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #181818;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 1px ;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
-
-/* Estilos Existentes ... */
 
 /* Tabela */
 table {
@@ -67,7 +66,7 @@ th, td {
 }
 
 th {
-    background-color: #5fcf62;
+    background-color: rgb(27, 169, 27);
     color: white;
 }
 
@@ -81,7 +80,7 @@ tr:hover {
 
 /* Links */
 a {
-    color: #4285f4;
+    color: #0a49ae;
     transition: color 0.3s;
 }
 
@@ -94,3 +93,29 @@ a:hover {
     /* Estilos para telas menores */
 }
 
+/* Estilos para a célula da imagem */
+.news-image {
+    width: 10%; /* Ajuste a largura conforme necessário */
+}
+
+.news-image img {
+    width: 85%; /* Faz a imagem ocupar toda a largura da célula */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para a célula de conteúdo */
+.news-content {
+    vertical-align: top; /* Alinha o conteúdo ao topo */
+    padding-left: 20px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+/* Estilos para o título e a descrição */
+.news-item h3 {
+    margin-top: 0;
+}
+
+.news-item p {
+    /* Estilos para a descrição */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

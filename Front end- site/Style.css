@@ -20,3 +20,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+td a {
+    display: flex;
+    text-align: right; /* Ajuste para alinhar o link à esquerda dentro da célula */
+    vertical-align: bottom; /* Ajuste para alinhar o link perto da linha inferior da célula */
+}

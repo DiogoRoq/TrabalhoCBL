@@ -1,48 +1,48 @@
-body {
+body { /* corpo */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header {
+header { /* cabeçalho */
     background-color: rgb(27, 169, 27);
     color: white;
     padding: 10px 0;
     font-size: 1.2em;
 }
 
-nav ul {
+nav ul { /* menu */
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-nav ul li {
+nav ul li { /* itens do menu */
     display: inline;
     margin-right: 20px;
 }
 
-nav ul li a {
+nav ul li a { /* links do menu */
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
-main {
+main { /* conteúdo principal */
     padding: 20px;
 }
 
-#featured-news {
+#featured-news { /* notícias em destaque */
     background-color: #eee;
     padding: 10px;
     margin-bottom: 20px;
 }
 
-#news-list {
+#news-list { /* lista de notícias */
     background-color: #f8f8f8;
     padding: 10px;
 }
 
-footer {
+footer { /* rodapé */
     background-color: #181818;
     color: white;
     text-align: center;
@@ -52,70 +52,66 @@ footer {
     width: 100%;
 }
 
-/* Tabela */
-table {
+table { /* tabela */
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-th, td {
+th, td { /* células da tabela */
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
 
-th {
+th { /* cabeçalho da tabela */
     background-color: rgb(27, 169, 27);
     color: white;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* linhas pares */
     background-color: #f2f2f2;
 }
 
-tr:hover {
+tr:hover { /* linhas com o mouse em cima */
     background-color: #ddd;
 }
 
-/* Links */
-a {
+a { /* links */
     color: #0a49ae;
     transition: color 0.3s;
 }
 
-a:hover {
+a:hover { /* links com o mouse em cima */
     color: #357ae8;
 }
 
 /* Responsividade */
 @media screen and (max-width: 600px) {
-    /* Estilos para telas menores */
+    
+    /**/
 }
 
-/* Estilos para a célula da imagem */
 .news-image {
-    width: 10%; /* Ajuste a largura conforme necessário */
+    width: 10%; /* largura da celula*/
 }
 
 .news-image img {
-    width: 85%; /* Faz a imagem ocupar toda a largura da célula */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 85%; /* ocupa todo o espaço */
+    height: auto; 
 }
 
-/* Estilos para a célula de conteúdo */
 .news-content {
-    vertical-align: top; /* Alinha o conteúdo ao topo */
-    padding-left: 20px; /* Adiciona espaço entre a imagem e o texto */
+    vertical-align: top; /* alinha a noticia */
+    padding-left: 20px; /* espaçamento */
 }
 
-/* Estilos para o título e a descrição */
-.news-item h3 {
+.news-item h3 { /* titulo da noticia */
     margin-top: 0;
 }
 
-.news-item p {
-    /* Estilos para a descrição */
+.news-item p { /* texto da noticia */
+    
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }

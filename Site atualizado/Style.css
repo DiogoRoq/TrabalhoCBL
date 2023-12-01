@@ -12,6 +12,9 @@ header { /* cabeçalho */
 }
 
 nav ul { /* menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
     padding: 0;
     text-align: center;
@@ -19,26 +22,19 @@ nav ul { /* menu */
 
 nav ul li { /* itens do menu */
     display: inline;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    
 }
 
 nav ul li a { /* links do menu */
     color: rgb(255, 255, 255);
     text-decoration: none;
+    
 }
 
 main { /* conteúdo principal */
-    padding: 20px;
-}
-
-#featured-news { /* notícias em destaque */
-    background-color: #eee;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-#news-list { /* lista de notícias */
-    background-color: #f8f8f8;
     padding: 10px;
 }
 
@@ -82,15 +78,10 @@ a { /* links */
     transition: color 0.3s;
 }
 
-a:hover { /* links com o mouse em cima */
+a:hover, button:hover { /* links com o mouse em cima */
     color: #357ae8;
 }
 
-/* Responsividade */
-@media screen and (max-width: 600px) {
-    
-    /**/
-}
 
 .news-image {
     width: 10%; /* largura da celula*/
@@ -114,4 +105,56 @@ a:hover { /* links com o mouse em cima */
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
+}
+/* Animação de entrada */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+/* Animação de saída */
+.fade-out {
+    animation: fadeOut 0.5s;
+}
+
+#searchForm {
+    /* Estilizações de exemplo */
+    display: flex;
+    align-items: center;
+    
+}
+
+#searchBox {
+    /* Estilizações de exemplo */
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #818181;
+}
+
+#featured-news { /* notícias em destaque */
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#news-list { /* lista de notícias */
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+  
+/* Keyframes para fadeIn e fadeOut */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    
+    /**/
 }

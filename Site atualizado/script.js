@@ -21,39 +21,41 @@ document.querySelectorAll('#featured-news table a').forEach(link => {
     link.setAttribute('target', '_blank');
 }); // nova aba quando clica no link 
 
-// Espera por todo o conteúdo da página ser carregado
-document.addEventListener("DOMContentLoaded", () => {
-    // Aplica a animação de entrada
-    document.body.classList.add("fade-in");
+
+document.addEventListener("DOMContentLoaded", () => { // função para carregar a pagina
+    
+    document.body.classList.add("fade-in"); // animação de entrada
   
-    // Intercepta todos os cliques em links
-    document.querySelectorAll("a").forEach(link => {
+    
+    document.querySelectorAll("a").forEach(link => { // intercepta todos os cliques
       link.addEventListener("click", e => {
-        e.preventDefault(); // Previne o comportamento padrão do link
+        e.preventDefault(); 
         const href = link.getAttribute("href");
   
-        // Aplica a animação de saída
-        document.body.classList.add("fade-out");
+        
+        document.body.classList.add("fade-out"); // animação de saída
   
-        // Aguarda o fim da animação
-        setTimeout(() => {
-          window.location.href = href; // Redireciona para o link clicado
-        }, 500); // O tempo aqui deve corresponder à duração da animação fade-out
+        
+        setTimeout(() => { // espera a animação de saída terminar
+          window.location.href = href; 
+        }, 500); // tempo
       });
     });
   });
 
   document.getElementById('searchForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Impede o recarregamento da página
+    e.preventDefault(); // nao deixa recarregar a pagina
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
 
-    // Percorre todos os títulos
-    document.querySelectorAll('#featured-news table tr td:first-child').forEach(title => {
+    
+    document.querySelectorAll('#featured-news table tr td:first-child, .news-content h3').forEach(title => {
         const titleText = title.textContent.toLowerCase();
-        if (titleText.indexOf(searchTerm) > -1) {
-            title.parentElement.style.display = 'table-row';
+        const newsItemRow = title.closest('tr'); // pega a linha toda da noticia
+
+        if (titleText.includes(searchTerm)) {
+            newsItemRow.style.display = ''; // mostra a linha
         } else {
-            title.parentElement.style.display = 'none';
+            newsItemRow.style.display = 'none'; // esconde
         }
     });
 });

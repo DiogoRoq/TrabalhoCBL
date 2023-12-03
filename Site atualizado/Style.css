@@ -106,25 +106,22 @@ a:hover, button:hover { /* links com o mouse em cima */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
-/* Animação de entrada */
-.fade-in {
+
+.fade-in { /* animacao de entrada */
     animation: fadeIn 0.5s;
 }
 
-/* Animação de saída */
-.fade-out {
+
+.fade-out { /* animacao de saída */
     animation: fadeOut 0.5s;
 }
 
-#searchForm {
-    /* Estilizações de exemplo */
+#searchForm { /* formulário de busca */
     display: flex;
     align-items: center;
-    
 }
 
-#searchBox {
-    /* Estilizações de exemplo */
+#searchBox { /* caixa de texto */
     padding: 5px;
     margin-right: 10px;
     border: 1px solid #818181;
@@ -141,20 +138,58 @@ a:hover, button:hover { /* links com o mouse em cima */
     padding: 10px;
 }
   
-/* Keyframes para fadeIn e fadeOut */
-@keyframes fadeIn {
+
+@keyframes fadeIn { /* animação de entrada */
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-@keyframes fadeOut {
+@keyframes fadeOut { /* animação de saída */
     from { opacity: 1; }
     to { opacity: 0; }
 }
 
 
-/* Responsividade */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /* responsividade */
     
-    /**/
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .news-image {
+        width: 100%;
+    }
+    
+    .news-content {
+        padding-left: 0;
+    }
+    
+    #searchForm {
+        flex-direction: column;
+    }
+    
+    #searchBox {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    #searchButton {
+        width: 100%;
+    }
+    
+    #featured-news {
+        margin-bottom: 10px;
+    }
+    
+    #news-list {
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        position: relative;
+    }
 }

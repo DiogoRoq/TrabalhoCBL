@@ -13,7 +13,7 @@ header { /* cabeçalho */
 
 nav ul { /* menu */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
     padding: 0;
@@ -153,7 +153,7 @@ a:hover, button:hover { /* links com o mouse em cima */
 @media screen and (max-width: 600px) { /* responsividade */
     
     nav ul {
-        flex-direction: column;
+        flex-direction: flex-end;
     }
     
     nav ul li {
@@ -192,4 +192,71 @@ a:hover, button:hover { /* links com o mouse em cima */
     footer {
         position: relative;
     }
+}
+
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+}
+
+.login-form {
+    width: 300px; /* Largura do formulário */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    background: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Borda sutil */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Cor azul, por exemplo */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+
+
+#loginButton {
+    padding: 5px 15px; /* Espaçamento interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Estilo do cursor */
+    margin-left: auto; /* Margem automática à esquerda para empurrar para a direita */
+}
+
+#loginButton:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
 }

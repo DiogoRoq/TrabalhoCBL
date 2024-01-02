@@ -90,7 +90,8 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 .news-image img {
     width: 85%; /* ocupa todo o espaço */
-    height: auto; 
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .news-content {
@@ -447,3 +448,23 @@ a:hover, button:hover { /* links com o mouse em cima */
     background-color: #fcfcfc;
     color: #000;
 }
+
+.news-image-notice  {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-description {
+    text-align: justify;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 25px;
+
+
+}
+
+

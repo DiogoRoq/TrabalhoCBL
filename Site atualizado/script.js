@@ -1,5 +1,4 @@
 
-
     
 document.querySelectorAll('nav ul li a').forEach(item => {
     item.addEventListener('click', function(e) {
@@ -79,33 +78,24 @@ document.addEventListener("DOMContentLoaded", () => { // função para carregar 
 });
 
 
-
 document.getElementById('loginButton').addEventListener('click', function() {
     window.location.href = 'login.html'; // Redireciona para a página de login
 });
 
 
-
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Impede o recarregamento da página
-
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-
-    // Credenciais pré-definidas
-    var correctUsername = 'admin'; // Substitua por seu usuário
-    var correctPassword = 'admin'; // Substitua por sua senha
-
-    if (username === correctUsername && password === correctPassword) {
-        alert('Login realizado com sucesso!');
-        // Redirecione para a página desejada após o login
-        window.location.href = 'index.html';
-    } else {
-        alert('Nome de usuário ou senha incorretos.');
-    }
-
-});
-
+// function executa quando clicamos no button de login
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "admin" && password == "admin"){
+alert ("Login successfully");
+window.location = "index.html"; // redireciona
+return false;
+}
+else{
+alert("username ou password incorretos");
+}
+}
 
 
 

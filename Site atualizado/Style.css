@@ -225,13 +225,14 @@ a:hover, button:hover { /* links com o mouse em cima */
 .carousel-container {
     width: 100%;
     overflow: hidden;
-    position: relative;
+    
 }
 
 .carousel-slide {
     display: flex;
-    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
-    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
+    width: calc(100% * 1); 
+    animation: scroll-left 50s linear infinite; /* Ajuste o tempo conforme necessário */
+    
 }
 
 .carousel-item {

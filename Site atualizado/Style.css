@@ -148,6 +148,14 @@ a:hover, button:hover { /* links com o mouse em cima */
     from { opacity: 1; }
     to { opacity: 0; }
 }
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 
 @media screen and (max-width: 600px) { /* responsividade */
@@ -247,16 +255,59 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 
 
-#loginButton {
-    padding: 5px 15px; /* Espaçamento interno do botão */
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Remove a borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Estilo do cursor */
-    margin-left: auto; /* Margem automática à esquerda para empurrar para a direita */
+.login-button-container {
+    position: absolute;
+    top: 10px;  /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    z-index: 100; /* Garante que o botão fique sobre outros elementos */
 }
 
-#loginButton:hover {
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+.login-button {
+    text-decoration: none;
+    color: white; /* ou qualquer cor que desejar */
+    background-color: #007bff; /* ou qualquer cor que desejar */
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-weight: bold;
 }
+
+.login-button:hover {
+    background-color: #0056b3; /* cor ao passar o mouse */
+}
+
+.login-button i {
+    font-size: 20px; /* Ajuste o tamanho do ícone */
+    color: white; /* Cor do ícone */
+}
+
+
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
+    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: #387ffa;
+    /* Outros estilos (cor, fundo, etc.) */
+}
+
+
+
+
+

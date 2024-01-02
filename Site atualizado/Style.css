@@ -304,10 +304,30 @@ a:hover, button:hover { /* links com o mouse em cima */
     font-weight: bold;
     color: white;
     background-color: #387ffa;
-    /* Outros estilos (cor, fundo, etc.) */
+    
 }
 
 
+
+.support-section {
+    padding: 20px;
+    background-color: #eee;
+
+}
+
+.support-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-field {
+    margin-bottom: 15px; /* Aumenta a margem abaixo de cada campo */
+    padding: 10px; /* Aumenta o preenchimento dentro de cada campo */
+    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
+    /* Outros estilos como borda, cor, etc. */
+}
 
 
 

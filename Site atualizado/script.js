@@ -1,4 +1,6 @@
 
+
+    
 document.querySelectorAll('nav ul li a').forEach(item => {
     item.addEventListener('click', function(e) {
         e.preventDefault();
@@ -15,6 +17,22 @@ document.querySelectorAll('#featured-news table tr').forEach(row => {
         row.style.backgroundColor = ' #fff';
     });
 }); // efeitos hover quando passamos o mouse por cima da tabela 
+
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".carousel-item");
+const totalSlides = slides.length;
+
+function updateCarousel() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[currentSlide].classList.add("active");
+
+    currentSlide = (currentSlide + 1) % totalSlides;
+}
+
+setInterval(updateCarousel, 4000); // Altera o slide a cada 3 segundos
+
 
 
 document.querySelectorAll('#featured-news table a').forEach(link => {
@@ -85,5 +103,11 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     } else {
         alert('Nome de usuário ou senha incorretos.');
     }
+
 });
+
+
+
+
+
 

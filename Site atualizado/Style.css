@@ -9,6 +9,9 @@ header { /* cabeçalho */
     color: white;
     padding: 10px 0;
     font-size: 1.2em;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 20px;
 }
 
 nav ul { /* menu */
@@ -84,6 +87,35 @@ a:hover, button:hover { /* links com o mouse em cima */
 }
 
 
+
+.logo-link img {
+    height: 70px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    align-self: flex-end;
+}
+
+
+.menu-navegacao li {
+    margin: 0 5px; /* Espaçamento entre os itens do menu */
+    border-right: 1px solid #fffcfc; /* Linha entre os itens */
+    padding-right: 20px; /* Espaço entre o texto e a linha */
+}
+
+.menu-navegacao li:last-child {
+    border-right: none; /* Remove a borda do último item */
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto do menu */
+    padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
+    display: block;
+}
+
+.menu-item.active a, .menu-navegacao a:hover {
+    border-bottom: 2px solid blue; /* Linha de destaque para a aba ativa e ao passar o mouse */
+}
+
 .news-image {
     width: 10%; /* largura da celula*/
 }
@@ -113,9 +145,249 @@ a:hover, button:hover { /* links com o mouse em cima */
     animation: fadeIn 0.5s;
 }
 
-
 .fade-out { /* animacao de saída */
     animation: fadeOut 0.5s;
+}
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+}
+
+.login-form {
+    width: 300px; /* Largura do formulário */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    background: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Borda sutil */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Cor azul, por exemplo */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+}
+
+.login-button-container {
+    position: absolute;
+    top: 40px;  /* Ajuste conforme necessário */
+    right: 15px; /* Ajuste conforme necessário */
+    z-index: 100; /* Garante que o botão fique sobre outros elementos */
+}
+
+.login-button {
+    text-decoration: none;
+    color: white; /* ou qualquer cor que desejar */
+    background-color: #007bff; /* ou qualquer cor que desejar */
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* cor ao passar o mouse */
+}
+
+.login-button i {
+    font-size: 20px; /* Ajuste o tamanho do ícone */
+    color: white; /* Cor do ícone */
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    display: flex;
+    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
+    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    background-color: #387ffa;
+    
+}
+
+.support-section {
+    padding: 20px;
+    background-color: #eee;
+
+}
+
+.support-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-field {
+    margin-bottom: 15px; /* Aumenta a margem abaixo de cada campo */
+    padding: 10px; /* Aumenta o preenchimento dentro de cada campo */
+    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
+    /* Outros estilos como borda, cor, etc. */
+}
+
+.forum-section {
+    padding: 20px;
+    /* Outros estilos conforme necessário */
+}
+
+.forum-topics {
+    margin-top: 20px;
+}
+
+.forum-topic {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* Cor de fundo para cada tópico */
+    text-decoration: none;
+    color: #000000; /* Cor do texto */
+    border-radius: 5px;
+}
+
+.forum-topic:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+}
+
+.discussion-topic {
+    padding: 20px;
+}
+
+.message-area {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borda para a área de mensagens */
+    padding: 10px;
+    max-height: 500px; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Permite rolagem se muitas mensagens */
+}
+
+.message {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-form button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e o texto verticalmente */
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.profile-pic {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.about-us {
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #000;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap; /* Para ajustar responsivamente */
+    justify-content: space-around; /* Espaçamento uniforme */
+    margin-top: 20px;
+}
+
+.member {
+    text-align: center; /* Centraliza o texto e a imagem */
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para imagens redondas */
+    margin-bottom: 10px;
+}
+
+.news-article {
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #000;
+}
+
+.news-image-notice  {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.news-description {
+    text-align: justify;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 25px;
+
+
 }
 
 #searchForm { /* formulário de busca */
@@ -206,265 +478,5 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Altura total da tela */
-}
-
-.login-form {
-    width: 300px; /* Largura do formulário */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    background: #fff; /* Fundo branco */
-    border-radius: 8px; /* Bordas arredondadas */
-}
-
-.login-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.login-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ddd; /* Borda sutil */
-}
-
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff; /* Cor azul, por exemplo */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
-}
-
-
-
-.login-button-container {
-    position: absolute;
-    top: 10px;  /* Ajuste conforme necessário */
-    right: 10px; /* Ajuste conforme necessário */
-    z-index: 100; /* Garante que o botão fique sobre outros elementos */
-}
-
-.login-button {
-    text-decoration: none;
-    color: white; /* ou qualquer cor que desejar */
-    background-color: #007bff; /* ou qualquer cor que desejar */
-    padding: 2px 7px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.login-button:hover {
-    background-color: #0056b3; /* cor ao passar o mouse */
-}
-
-.login-button i {
-    font-size: 20px; /* Ajuste o tamanho do ícone */
-    color: white; /* Cor do ícone */
-}
-
-
-
-
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-slide {
-    display: flex;
-    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
-    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    background-color: #387ffa;
-    
-}
-
-
-
-.support-section {
-    padding: 20px;
-    background-color: #eee;
-
-}
-
-.support-contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.input-field {
-    margin-bottom: 15px; /* Aumenta a margem abaixo de cada campo */
-    padding: 10px; /* Aumenta o preenchimento dentro de cada campo */
-    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
-    /* Outros estilos como borda, cor, etc. */
-}
-
-
-
-
-.forum-section {
-    padding: 20px;
-    /* Outros estilos conforme necessário */
-}
-
-.forum-topics {
-    margin-top: 20px;
-}
-
-.forum-topic {
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f0f0f0; /* Cor de fundo para cada tópico */
-    text-decoration: none;
-    color: #000000; /* Cor do texto */
-    border-radius: 5px;
-}
-
-.forum-topic:hover {
-    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
-}
-
-
-
-
-
-.discussion-topic {
-    padding: 20px;
-}
-
-.message-area {
-    margin-bottom: 20px;
-    border: 1px solid #ccc; /* Borda para a área de mensagens */
-    padding: 10px;
-    max-height: 500px; /* Ajuste conforme necessário */
-    overflow-y: auto; /* Permite rolagem se muitas mensagens */
-}
-
-.message {
-    background-color: #f0f0f0;
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.message-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.message-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.message-form button:hover {
-    background-color: #0056b3;
-}
-
-
-.message {
-    display: flex;
-    align-items: flex-start; /* Alinha a imagem e o texto verticalmente */
-    margin-bottom: 10px;
-    padding: 8px;
-}
-
-.profile-pic {
-    width: 50px; /* Ajuste o tamanho conforme necessário */
-    height: 50px; /* Ajuste o tamanho conforme necessário */
-    border-radius: 50%; /* Torna a imagem circular */
-    margin-right: 10px; /* Espaço entre a imagem e o texto */
-}
-
-
-
-
-.about-us {
-    padding: 20px;
-    background-color: #fcfcfc;
-    color: #000;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap; /* Para ajustar responsivamente */
-    justify-content: space-around; /* Espaçamento uniforme */
-    margin-top: 20px;
-}
-
-.member {
-    text-align: center; /* Centraliza o texto e a imagem */
-    margin-bottom: 20px;
-}
-
-.member img {
-    width: 150px; /* Ajuste conforme necessário */
-    height: 150px; /* Ajuste conforme necessário */
-    border-radius: 50%; /* Para imagens redondas */
-    margin-bottom: 10px;
-}
-
-
-.news-article {
-    padding: 20px;
-    background-color: #fcfcfc;
-    color: #000;
-}
-
-.news-image-notice  {
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.news-description {
-    text-align: justify;
-    margin-bottom: 50px;
-    font-family: sans-serif;
-    font-size: 25px;
-
-
-}
 
 

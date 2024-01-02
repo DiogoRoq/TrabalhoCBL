@@ -19,18 +19,8 @@ document.querySelectorAll('#featured-news table tr').forEach(row => {
 
 
 
-let currentSlide = 0;
-const slides = document.querySelectorAll(".carousel-item");
-const totalSlides = slides.length;
 
-function updateCarousel() {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[currentSlide].classList.add("active");
 
-    currentSlide = (currentSlide + 1) % totalSlides;
-}
-
-setInterval(updateCarousel, 4000); // Altera o slide a cada 3 segundos
 
 
 

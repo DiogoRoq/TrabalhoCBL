@@ -152,20 +152,21 @@ a:hover, button:hover { /* links com o mouse em cima */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Altura total da tela */
+    height: 80vh; /* Altura total da tela */
 }
 
 .login-form {
-    width: 300px; /* Largura do formulário */
+    width: 400px; /* Largura do formulário */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    background: #fff; /* Fundo branco */
+    background: #ffffff; /* Fundo branco */
     border-radius: 8px; /* Bordas arredondadas */
 }
 
 .login-form h2 {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 .login-form label {
@@ -230,9 +231,8 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 .carousel-slide {
     display: flex;
-    width: calc(100% * 1); 
-    animation: scroll-left 50s linear infinite; /* Ajuste o tempo conforme necessário */
-    
+    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
+    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
 }
 
 .carousel-item {

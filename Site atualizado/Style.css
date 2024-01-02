@@ -36,6 +36,7 @@ nav ul li a { /* links do menu */
 
 main { /* conteúdo principal */
     padding: 10px;
+    
 }
 
 footer { /* rodapé */
@@ -329,3 +330,120 @@ a:hover, button:hover { /* links com o mouse em cima */
     /* Outros estilos como borda, cor, etc. */
 }
 
+
+
+
+.forum-section {
+    padding: 20px;
+    /* Outros estilos conforme necessário */
+}
+
+.forum-topics {
+    margin-top: 20px;
+}
+
+.forum-topic {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* Cor de fundo para cada tópico */
+    text-decoration: none;
+    color: #000000; /* Cor do texto */
+    border-radius: 5px;
+}
+
+.forum-topic:hover {
+    background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+
+
+.discussion-topic {
+    padding: 20px;
+}
+
+.message-area {
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borda para a área de mensagens */
+    padding: 10px;
+    max-height: 500px; /* Ajuste conforme necessário */
+    overflow-y: auto; /* Permite rolagem se muitas mensagens */
+}
+
+.message {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.message-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-form button:hover {
+    background-color: #0056b3;
+}
+
+
+.message {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e o texto verticalmente */
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.profile-pic {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
+
+
+
+.about-us {
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #000;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap; /* Para ajustar responsivamente */
+    justify-content: space-around; /* Espaçamento uniforme */
+    margin-top: 20px;
+}
+
+.member {
+    text-align: center; /* Centraliza o texto e a imagem */
+    margin-bottom: 20px;
+}
+
+.member img {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px; /* Ajuste conforme necessário */
+    border-radius: 50%; /* Para imagens redondas */
+    margin-bottom: 10px;
+}
+
+
+.news-article {
+    padding: 20px;
+    background-color: #fcfcfc;
+    color: #000;
+}

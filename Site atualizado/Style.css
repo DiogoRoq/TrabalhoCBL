@@ -223,29 +223,7 @@ a:hover, button:hover { /* links com o mouse em cima */
     color: white; /* Cor do ícone */
 }
 
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
-    
-}
 
-.carousel-slide {
-    display: flex;
-    width: calc(100% * número_de_itens); /* Substitua número_de_itens pelo total de itens */
-    animation: scroll-left 35s linear infinite; /* Ajuste o tempo conforme necessário */
-}
-
-.carousel-item {
-    flex: 0 0 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    font-weight: bold;
-    color: white;
-    background-color: #387ffa;
-    
-}
 
 .support-section {
     padding: 20px;
@@ -388,7 +366,29 @@ a:hover, button:hover { /* links com o mouse em cima */
     font-family: sans-serif;
     font-size: 25px;
 
+}
+.news-article-graph {
+    padding: 20px;
+    max-width: 800px; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Centraliza a seção na página */
+}
 
+.news-graphic {
+    width: 100%; /* Faz a imagem se ajustar à largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px;
+}
+
+.news-article-graph h1 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.news-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify; /* Para um alinhamento justificado do texto */
 }
 
 #searchForm { /* formulário de busca */
@@ -476,6 +476,257 @@ a:hover, button:hover { /* links com o mouse em cima */
         position: relative;
     }
 }
+
+@media screen and (max-width: 400px) { /* responsividade */
+    
+    .news-article-graph h1 {
+        font-size: 1.5em;
+    }
+    
+    .news-description {
+        font-size: 1em;
+    }
+    
+    .news-article-graph {
+        padding: 10px;
+    }
+    
+    .news-graphic {
+        margin-bottom: 10px;
+    }
+    
+    .news-image-notice {
+        width: 100%;
+    }
+    
+    .news-image-notice img {
+        width: 100%;
+    }
+    
+    .news-description {
+        margin-bottom: 20px;
+    }
+    
+    .news-article {
+        padding: 10px;
+    }
+    
+    .about-us {
+        padding: 10px;
+    }
+    
+    .team-members {
+        margin-top: 10px;
+    }
+    
+    .member {
+        margin-bottom: 10px;
+    }
+    
+    .member img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .message-area {
+        max-height: 300px;
+    }
+    
+    .message-form textarea {
+        margin-bottom: 5px;
+    }
+    
+    .message-form button {
+        margin-bottom: 5px;
+    }
+    
+    .message {
+        margin-bottom: 5px;
+    }
+    
+    .login-form {
+        width: 300px;
+    }
+    
+    .login-form h2 {
+        font-size: 1.5em;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        margin-bottom: 10px;
+    }
+    
+    .login-form button {
+        margin-bottom: 10px;
+    }
+    
+    .login-button-container {
+        top: 20px;
+        right: 10px;
+    }
+    
+    .login-button {
+        padding: 2px 5px;
+    }
+    
+    .login-button i {
+        font-size: 16px;
+    }
+    
+    .login-container {
+        height: 100vh;
+    }
+    
+    .login-form {
+        padding: 10px;
+    }
+    
+    .login-form label {
+        margin-bottom: 2px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .login-form button {
+        padding: 5px;
+    }
+
+    .login-form button:hover {
+        background-color: #0056b3;
+    }
+}
+
+@media screen and (max-width: 300px) { /* responsividade */
+    
+    .news-article-graph h1 {
+        font-size: 1.2em;
+    }
+    
+    .news-description {
+        font-size: 0.8em;
+    }
+    
+    .news-article-graph {
+        padding: 5px;
+    }
+    
+    .news-graphic {
+        margin-bottom: 5px;
+    }
+    
+    .news-image-notice {
+        width: 100%;
+    }
+    
+    .news-image-notice img {
+        width: 100%;
+    }
+    
+    .news-description {
+        margin-bottom: 10px;
+    }
+    
+    .news-article {
+        padding: 5px;
+    }
+    
+    .about-us {
+        padding: 5px;
+    }
+    
+    .team-members {
+        margin-top: 5px;
+    }
+    
+    .member {
+        margin-bottom: 5px;
+    }
+    
+    .member img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .message-area {
+        max-height: 200px;
+    }
+    
+    .message-form textarea {
+        margin-bottom: 2px;
+    }
+    
+    .message-form button {
+        margin-bottom: 2px;
+    }
+    
+    .message {
+        margin-bottom: 2px;
+    }
+    
+    .login-form {
+        width: 250px;
+    }
+    
+    .login-form h2 {
+        font-size: 1.2em;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        margin-bottom: 5px;
+    }
+    
+    .login-form button {
+        margin-bottom: 5px;
+    }
+    
+    .login-button-container {
+        top: 20px;
+        right: 10px;
+    }
+    
+    .login-button {
+        padding: 2px 5px;
+    }
+    
+    .login-button i {
+        font-size: 16px;
+    }
+    
+    .login-container {
+        height: 100vh;
+    }
+    
+    .login-form {
+        padding: 5px;
+    }
+    
+    .login-form label {
+        margin-bottom: 2px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .login-form button {
+        padding: 5px;
+    }
+
+    .login-form button:hover {
+        background-color: #0056b3;
+    }
+
+}
+
+
 
 
 

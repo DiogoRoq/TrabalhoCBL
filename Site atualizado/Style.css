@@ -439,10 +439,22 @@ a:hover, button:hover { /* links com o mouse em cima */
         flex-direction: flex-end;
     }
     
-    nav ul li {
-        margin: 5px 0;
+    nav ul li { /* itens do menu */
+        display: inline;  
+        font-size: 11px; 
+        width: auto;
+        height: auto;
+        padding: 5px;
+        
     }
     
+    .login-button-container {
+        position: absolute;
+        top: 5px;  /* Ajuste conforme necessário */
+        right: 15px; /* Ajuste conforme necessário */
+        z-index: 100; /* Garante que o botão fique sobre outros elementos */
+    }
+
     .news-image {
         width: 100%;
     }
@@ -451,17 +463,25 @@ a:hover, button:hover { /* links com o mouse em cima */
         padding-left: 0;
     }
     
+    .logo-link img {
+        height: 0px; /* Ajuste a altura conforme necessário */
+        width: auto; /* Mantém a proporção da imagem */
+        align-self: flex; /* Alinha a imagem à direita */
+    }
+    
     #searchForm {
-        flex-direction: column;
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+        padding: 2px;
+        align-self:baseline;
+
     }
     
     #searchBox {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    
-    #searchButton {
         width: 100%;
+        padding: 2px;
+        margin-right: 10px;
     }
     
     #featured-news {
@@ -473,258 +493,10 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
     
     footer {
-        position: relative;
+        position:fixed;
     }
 }
 
-@media screen and (max-width: 400px) { /* responsividade */
-    
-    .news-article-graph h1 {
-        font-size: 1.5em;
-    }
-    
-    .news-description {
-        font-size: 1em;
-    }
-    
-    .news-article-graph {
-        padding: 10px;
-    }
-    
-    .news-graphic {
-        margin-bottom: 10px;
-    }
-    
-    .news-image-notice {
-        width: 100%;
-    }
-    
-    .news-image-notice img {
-        width: 100%;
-    }
-    
-    .news-description {
-        margin-bottom: 20px;
-    }
-    
-    .news-article {
-        padding: 10px;
-    }
-    
-    .about-us {
-        padding: 10px;
-    }
-    
-    .team-members {
-        margin-top: 10px;
-    }
-    
-    .member {
-        margin-bottom: 10px;
-    }
-    
-    .member img {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .message-area {
-        max-height: 300px;
-    }
-    
-    .message-form textarea {
-        margin-bottom: 5px;
-    }
-    
-    .message-form button {
-        margin-bottom: 5px;
-    }
-    
-    .message {
-        margin-bottom: 5px;
-    }
-    
-    .login-form {
-        width: 300px;
-    }
-    
-    .login-form h2 {
-        font-size: 1.5em;
-    }
-    
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-        margin-bottom: 10px;
-    }
-    
-    .login-form button {
-        margin-bottom: 10px;
-    }
-    
-    .login-button-container {
-        top: 20px;
-        right: 10px;
-    }
-    
-    .login-button {
-        padding: 2px 5px;
-    }
-    
-    .login-button i {
-        font-size: 16px;
-    }
-    
-    .login-container {
-        height: 100vh;
-    }
-    
-    .login-form {
-        padding: 10px;
-    }
-    
-    .login-form label {
-        margin-bottom: 2px;
-    }
-    
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-        padding: 5px;
-        margin-bottom: 10px;
-    }
-
-    .login-form button {
-        padding: 5px;
-    }
-
-    .login-form button:hover {
-        background-color: #0056b3;
-    }
-}
-
-@media screen and (max-width: 300px) { /* responsividade */
-    
-    .news-article-graph h1 {
-        font-size: 1.2em;
-    }
-    
-    .news-description {
-        font-size: 0.8em;
-    }
-    
-    .news-article-graph {
-        padding: 5px;
-    }
-    
-    .news-graphic {
-        margin-bottom: 5px;
-    }
-    
-    .news-image-notice {
-        width: 100%;
-    }
-    
-    .news-image-notice img {
-        width: 100%;
-    }
-    
-    .news-description {
-        margin-bottom: 10px;
-    }
-    
-    .news-article {
-        padding: 5px;
-    }
-    
-    .about-us {
-        padding: 5px;
-    }
-    
-    .team-members {
-        margin-top: 5px;
-    }
-    
-    .member {
-        margin-bottom: 5px;
-    }
-    
-    .member img {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .message-area {
-        max-height: 200px;
-    }
-    
-    .message-form textarea {
-        margin-bottom: 2px;
-    }
-    
-    .message-form button {
-        margin-bottom: 2px;
-    }
-    
-    .message {
-        margin-bottom: 2px;
-    }
-    
-    .login-form {
-        width: 250px;
-    }
-    
-    .login-form h2 {
-        font-size: 1.2em;
-    }
-    
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-        margin-bottom: 5px;
-    }
-    
-    .login-form button {
-        margin-bottom: 5px;
-    }
-    
-    .login-button-container {
-        top: 20px;
-        right: 10px;
-    }
-    
-    .login-button {
-        padding: 2px 5px;
-    }
-    
-    .login-button i {
-        font-size: 16px;
-    }
-    
-    .login-container {
-        height: 100vh;
-    }
-    
-    .login-form {
-        padding: 5px;
-    }
-    
-    .login-form label {
-        margin-bottom: 2px;
-    }
-    
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-        padding: 5px;
-        margin-bottom: 5px;
-    }
-
-    .login-form button {
-        padding: 5px;
-    }
-
-    .login-form button:hover {
-        background-color: #0056b3;
-    }
-
-}
 
 
 

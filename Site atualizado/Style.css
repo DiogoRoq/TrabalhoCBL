@@ -497,7 +497,63 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
 }
 
-
+@media screen and (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    nav ul li {
+      display: block;
+      font-size: 14px;
+      width: 100%;
+      text-align: right;
+      margin-bottom: 5px;
+    }
+  
+    .login-button-container {
+      top: 5px;
+      right: 15px;
+    }
+  
+    .news-image {
+      width: 100%;
+    }
+  
+    .news-content {
+      padding-left: 0;
+    }
+  
+    .logo-link img {
+      height: 60px;
+      width: auto;
+      align-self: flex-end;
+    }
+  
+    #searchForm {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      align-self: baseline;
+    }
+  
+    #searchBox {
+      width: 100%;
+      padding: 5px;
+      margin-right: 0;
+    }
+  
+    #featured-news,
+    #news-list {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  
+    footer {
+      position: static;
+    }
+  }
 
 
 

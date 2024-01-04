@@ -1,4 +1,4 @@
-package CSV.src.main.java.org.example;
+package org.example;
 
 import java.io.FileWriter;
 import java.io.IOException;

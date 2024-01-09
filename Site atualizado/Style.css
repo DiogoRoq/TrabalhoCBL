@@ -43,7 +43,7 @@ main { /* conteúdo principal */
 }
 
 footer { /* rodapé */
-    background-color: #181818;
+    background-color: rgb(27, 94, 169);
     color: white;
     text-align: center;
     padding: 1px ;

@@ -94,7 +94,12 @@ document.getElementById('loginButton').addEventListener('click', function() {
 });
 
 
+AOS.init({
+    duration: 3000, // duração da animação em milissegundos
+    delay: 6000, // atraso da animação em milissegundos
+    once: true, // animar apenas uma vez
+    // outras opções...
+  });
 
-
-
-
+  
+  

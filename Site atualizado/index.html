@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 
     <title>Notícias</title>
 </head>
 <body>
     <header class="darkable">
+        <div data-aos="fade-up">
         <nav class="menu-navegacao">
             
             <ul>
@@ -32,9 +35,9 @@
                 <button onclick="toggleDarkMode()" id="mode-toggle">Toggle Dark Mode</button>
             </ul>
         </nav>
-        
+    </div>
     </header>
-    
+    <div data-aos="fade-up">
     <main>
 
         <section class="darkable" id="featured-news">
@@ -113,18 +116,18 @@
                 </p>
               </td>
           </tr>
-
         </tbody>
-        
     </table>
-    
 </section>
-
 </main>
-
+    </div>
 <footer >
     <p>&copy; 2023 Notícias. Todos os direitos reservados.</p>
 </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <script src="script.js"></script>
 

@@ -598,6 +598,29 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 
 
+.autocomplete-items {
+    /* Sugestões de estilos para a lista de sugestões */
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.searchBox div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+}
+
+.autocomplete-items div:hover {
+    /* Quando passar o mouse sobre um item da lista */
+    background-color: #e9e9e9; 
+}
 
 
 

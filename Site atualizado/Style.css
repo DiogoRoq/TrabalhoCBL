@@ -2,16 +2,52 @@ body { /* corpo */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+body .dark-mode {
+    background-color: #4a4a4a;
+    color: #FAFAFA;
+}
+
+section {
+   background-color:#360202 ;
+}
+section .dark-mode {
+    background-color:#2b011e ;
+ }
+
+#mode-toggle {
+    background-color: #4a4a4a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 10px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 header { /* cabeçalho */
     background-color: rgb(27, 169, 27);
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 1.2em;
     display: flex;
-    align-items: flex-start;
-    padding: 10px 20px;
+    align-items: flex;
+}
+header .dark-mode { /* cabeçalho */
+    background-color: rgb(35, 4, 61);
+    color: white;
+    padding: 5px 0;
+    font-size: 1.2em;
+    display: flex;
+    align-items: flex;
 }
 
 nav ul { /* menu */
@@ -91,7 +127,12 @@ a:hover, button:hover { /* links com o mouse em cima */
 .logo-link img {
     height: 70px; /* Ajuste a altura conforme necessário */
     width: auto; /* Mantém a proporção da imagem */
-    align-self: flex-end;
+    align-self: flex;
+    margin: 10px;
+    
+}
+.mode-toggle {
+    display:flex;
 }
 
 
@@ -109,7 +150,7 @@ a:hover, button:hover { /* links com o mouse em cima */
     text-decoration: none;
     color: #ffffff; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
-    display: block;
+    display: flex;
 }
 
 .menu-item.active a, .menu-navegacao a:hover {

@@ -37,6 +37,40 @@ document.addEventListener("DOMContentLoaded", () => { // função para carregar 
     });
   });
 
+// Check if dark mode is already enabled in local storage
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    enableDarkMode();
+}
+
+// Toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+        disableDarkMode();
+    } else {
+        enableDarkMode();
+    }
+}
+
+// Enable dark mode
+function enableDarkMode() {
+    document.body.classList.add('dark-mode');
+    document.querySelectorAll('.darkable').forEach(element => {
+        element.classList.add('dark-mode');
+    });
+    // Save dark mode preference to local storage
+    localStorage.setItem('dark-mode', 'enabled');
+}
+
+// Disable dark mode
+function disableDarkMode() {
+    document.body.classList.remove('dark-mode');
+    document.querySelectorAll('.darkable').forEach(element => {
+        element.classList.remove('dark-mode');
+    });
+    // Remove dark mode preference from local storage
+    localStorage.setItem('dark-mode', 'disabled');
+}
   document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault(); // nao deixa recarregar a pagina
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
@@ -59,20 +93,6 @@ document.getElementById('loginButton').addEventListener('click', function() {
     window.location.href = 'login.html'; // Redireciona para a página de login
 });
 
-
-// function executa quando clicamos no button de login
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-if ( username == "admin" && password == "admin"){
-alert ("Login successfully");
-window.location = "index.html"; // redireciona
-return false;
-}
-else{
-alert("username ou password incorretos");
-}
-}
 
 
 

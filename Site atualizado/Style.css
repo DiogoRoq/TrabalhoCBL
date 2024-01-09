@@ -2,16 +2,49 @@ body { /* corpo */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #A9D6E5;
+    color: #000;
+}
+
+body .dark-mode {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+section .dark-mode {
+    background-color:#252922 ;
+ }
+
+#mode-toggle {
+    background-color: #4a4a4a; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    margin: 10px;
+    font-size: 16px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 header { /* cabeçalho */
-    background-color: rgb(27, 169, 27);
+    background-color: #468FAF;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 1.2em;
     display: flex;
-    align-items: flex-start;
-    padding: 10px 20px;
+    align-items: flex;
+}
+header .dark-mode { /* cabeçalho */
+    background-color: rgb(35, 4, 61);
+    color: white;
+    padding: 5px 0;
+    font-size: 1.2em;
+    display: flex;
+    align-items: flex;
 }
 
 nav ul { /* menu */
@@ -43,8 +76,8 @@ main { /* conteúdo principal */
 }
 
 footer { /* rodapé */
-    background-color: rgb(27, 94, 169);
-    color: white;
+    background-color: #468FAF;
+    color: DARK-GREY;
     text-align: center;
     padding: 1px ;
     position: fixed;
@@ -56,25 +89,29 @@ table { /* tabela */
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    
 }
 
 th, td { /* células da tabela */
     padding: 12px;
-    border: 1px solid #ddd;
+    border: 1px solid #2C7DA0;
     text-align: left;
 }
 
 th { /* cabeçalho da tabela */
-    background-color: rgb(27, 169, 27);
+    background-color: #61A5C2;
     color: white;
+}
+tr {
+    background-color: #89C2D9;
 }
 
 tr:nth-child(even) { /* linhas pares */
-    background-color: #f2f2f2;
+    background-color: #A9D6E5;
 }
 
 tr:hover { /* linhas com o mouse em cima */
-    background-color: #ddd;
+    background-color: #468FAF;
 }
 
 a { /* links */
@@ -91,13 +128,18 @@ a:hover, button:hover { /* links com o mouse em cima */
 .logo-link img {
     height: 70px; /* Ajuste a altura conforme necessário */
     width: auto; /* Mantém a proporção da imagem */
-    align-self: flex-end;
+    align-self: flex;
+    margin: 10px;
+    
+}
+.mode-toggle {
+    display:flex;
 }
 
 
 .menu-navegacao li {
     margin: 0 5px; /* Espaçamento entre os itens do menu */
-    border-right: 1px solid #fffcfc; /* Linha entre os itens */
+    border-right: 1px solid #518bbb; /* Linha entre os itens */
     padding-right: 20px; /* Espaço entre o texto e a linha */
 }
 
@@ -107,9 +149,9 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 .menu-navegacao a {
     text-decoration: none;
-    color: #ffffff; /* Cor do texto do menu */
+    color: #0e323b; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
-    display: block;
+    display: flex;
 }
 
 .menu-item.active a, .menu-navegacao a:hover {
@@ -148,82 +190,6 @@ a:hover, button:hover { /* links com o mouse em cima */
 .fade-out { /* animacao de saída */
     animation: fadeOut 0.5s;
 }
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Altura total da tela */
-}
-
-.login-form {
-    width: 400px; /* Largura do formulário */
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
-    background: #ffffff; /* Fundo branco */
-    border-radius: 8px; /* Bordas arredondadas */
-}
-
-.login-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    
-}
-
-.login-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ddd; /* Borda sutil */
-}
-
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff; /* Cor azul, por exemplo */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.login-form button:hover {
-    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
-}
-
-.login-button-container {
-    position: absolute;
-    top: 40px;  /* Ajuste conforme necessário */
-    right: 15px; /* Ajuste conforme necessário */
-    z-index: 100; /* Garante que o botão fique sobre outros elementos */
-}
-
-.login-button {
-    text-decoration: none;
-    color: white; /* ou qualquer cor que desejar */
-    background-color: #007bff; /* ou qualquer cor que desejar */
-    padding: 2px 7px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.login-button:hover {
-    background-color: #0056b3; /* cor ao passar o mouse */
-}
-
-.login-button i {
-    font-size: 20px; /* Ajuste o tamanho do ícone */
-    color: white; /* Cor do ícone */
-}
-
-
 
 .support-section {
     padding: 20px;
@@ -322,8 +288,8 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 .about-us {
     padding: 20px;
-    background-color: #fcfcfc;
-    color: #000;
+    background-color: #A9D6E5;
+    color: #05274e;
 }
 
 .team-members {
@@ -347,7 +313,7 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 .news-article {
     padding: 20px;
-    background-color: #fcfcfc;
+    background-color: #A9D6E5;
     color: #000;
 }
 
@@ -403,13 +369,13 @@ a:hover, button:hover { /* links com o mouse em cima */
 }
 
 #featured-news { /* notícias em destaque */
-    background-color: #eee;
+    background-color: #A9D6E5;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 #news-list { /* lista de notícias */
-    background-color: #f8f8f8;
+    background-color: #61A5C2;
     padding: 10px;
 }
   
@@ -490,6 +456,7 @@ a:hover, button:hover { /* links com o mouse em cima */
     
     #news-list {
         margin-bottom: 10px;
+        background-color: #A9D6E5;
     }
     
     footer {

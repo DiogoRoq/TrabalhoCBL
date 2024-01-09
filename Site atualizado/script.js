@@ -136,4 +136,25 @@ AOS.init({
   });
 
   
-  
+
+  document.querySelectorAll('.imagem-container .social-icons a').forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        e.preventDefault();
+        var socialNetwork = this.getAttribute('data-social');
+        var url = window.location.href;
+        var shareUrl;
+
+        if (socialNetwork === 'facebook') {
+            shareUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+        } else if (socialNetwork === 'twitter') {
+            shareUrl = 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url);
+        } else if (socialNetwork === 'linkedin') {
+            shareUrl = 'https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(url);
+        }
+         else if (socialNetwork === 'whatsapp') {
+            shareUrl = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(url);}
+
+        // Abre o URL em uma nova janela
+        window.open(shareUrl, '_blank').focus();
+    });
+});

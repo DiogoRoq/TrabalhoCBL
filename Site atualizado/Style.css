@@ -568,3 +568,42 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 
 
+.imagem-container {
+    position: relative;
+    display: inline-block;
+}
+
+.imagem-container .social-icons {
+    display: none;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+    z-index: 10;
+}
+
+.imagem-container:hover .social-icons {
+    display: block;
+}
+
+/* Estilize os links de compartilhamento conforme necessário */
+.social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+    /* Adicione mais estilos aqui */
+}
+
+
+.share-options {
+    display: none;
+    position: absolute; /* Ajuste conforme necessário */
+    /* Outros estilos de posicionamento e design */
+}
+
+.share-icon {
+    margin: 5px;
+    text-decoration: none;
+    color: #000; /* ou a cor desejada */
+    font-size: 24px; /* Ajuste o tamanho dos ícones */
+}
+
+/* Estilize os botões e ícones conforme necessário */

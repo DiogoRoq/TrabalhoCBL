@@ -1,5 +1,4 @@
 
-
 document.querySelectorAll('#featured-news table tr').forEach(row => {
     row.addEventListener('mouseover', () => {
         row.style.backgroundColor = '#ccc';
@@ -10,43 +9,17 @@ document.querySelectorAll('#featured-news table tr').forEach(row => {
 }); // efeitos hover quando passamos o mouse por cima da tabela 
 
 
-
 document.querySelectorAll('#featured-news table a').forEach(link => {
     link.setAttribute('target', '_blank');
 }); // nova aba quando clica no link 
 
+function toggleText() {
+    var textContainer = document.getElementById("textContainer");
 
-document.addEventListener("DOMContentLoaded", () => { // função para carregar a pagina
-    
-    document.body.classList.add("fade-in"); // animação de entrada
-  
-    
-    document.querySelectorAll("a").forEach(link => { // intercepta todos os cliques
-      link.addEventListener("click", e => {
-        e.preventDefault(); 
-        const href = link.getAttribute("href");
-  
-        
-        document.body.classList.add("fade-out"); // animação de saída
-  
-        
-        setTimeout(() => { // espera a animação de saída terminar
-          window.location.href = href; 
-        }, 500); // tempo
-      });
-    });
-  });
-
-// Check if dark mode is already enabled in local storage
-if (localStorage.getItem('dark-mode') === 'enabled') {
-    enableDarkMode();
-}
-
-// Toggle dark mode
-function toggleDarkMode() {
-    const body = document.body;
-    if (body.classList.contains('dark-mode')) {
-        disableDarkMode();
+    // Verifica se o texto está visível
+    if (textContainer.style.display === "none") {
+        // Se estiver oculto, exibe o texto
+        textContainer.style.display = "block";
     } else {
         enableDarkMode();
     }
@@ -94,12 +67,7 @@ document.getElementById('loginButton').addEventListener('click', function() {
 });
 
 
-AOS.init({
-    duration: 3000, // duração da animação em milissegundos
-    delay: 6000, // atraso da animação em milissegundos
-    once: true, // animar apenas uma vez
-    // outras opções...
-  });
 
-  
-  
+
+
+

@@ -71,6 +71,40 @@ function disableDarkMode() {
     // Remove dark mode preference from local storage
     localStorage.setItem('dark-mode', 'disabled');
 }
+// Check if dark mode is already enabled in local storage
+if (localStorage.getItem('dark-mode') === 'enabled') {
+    enableDarkMode();
+}
+
+// Toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+        disableDarkMode();
+    } else {
+        enableDarkMode();
+    }
+}
+
+// Enable dark mode
+function enableDarkMode() {
+    document.body.classList.add('dark-mode');
+    document.querySelectorAll('.darkable').forEach(element => {
+        element.classList.add('dark-mode');
+    });
+    // Save dark mode preference to local storage
+    localStorage.setItem('dark-mode', 'enabled');
+}
+
+// Disable dark mode
+function disableDarkMode() {
+    document.body.classList.remove('dark-mode');
+    document.querySelectorAll('.darkable').forEach(element => {
+        element.classList.remove('dark-mode');
+    });
+    // Remove dark mode preference from local storage
+    localStorage.setItem('dark-mode', 'disabled');
+}
   document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault(); // nao deixa recarregar a pagina
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
@@ -94,7 +128,12 @@ document.getElementById('loginButton').addEventListener('click', function() {
 });
 
 
+AOS.init({
+    duration: 3000, // duração da animação em milissegundos
+    delay: 6000, // atraso da animação em milissegundos
+    once: true, // animar apenas uma vez
+    // outras opções...
+  });
 
-
-
-
+  
+  

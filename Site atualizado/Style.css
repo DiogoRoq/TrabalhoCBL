@@ -8,6 +8,9 @@ body { /* corpo */
     padding: 0;
     background-color: #A9D6E5;
     color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body .dark-mode {
@@ -520,7 +523,8 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
     
     footer {
-        position:fixed;
+        margin-top: auto;
+
     }
 }
 

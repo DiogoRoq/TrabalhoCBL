@@ -185,3 +185,17 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
   // final do js carrossel 
+  
+  // script dos botões no about.html
+function toggleText(memberName) {
+    var textContainer = document.getElementById(memberName + "TextContainer");
+
+    // Verifica se o texto está visível
+    if (textContainer.style.display === "none") {
+        // Se estiver oculto, exibe o texto
+        textContainer.style.display = "block";
+    } else {
+        // Se estiver visível, oculta o texto
+        textContainer.style.display = "none";
+    }
+}

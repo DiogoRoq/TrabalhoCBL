@@ -12,14 +12,21 @@ body { /* corpo */
     display: flex;
     flex-direction: column;
 }
+main {
+    background-color: #A9D6E5;
+}
+main .dark-mode {
+    background-color: #A9D6E5;
+}
 
 body .dark-mode {
-    background-color: #012A4A;
+    background-color: #013A63;
     color: #fff;
 }
 
 section .dark-mode {
-    background-color:#013A63 ;
+    background-color:#013A63;
+    color : #FFFFFF;
  }
 
 #mode-toggle {
@@ -52,6 +59,21 @@ header.dark-mode { /* cabeçalho */
     font-size: 1.2em;
     display: flex;
     align-items: flex;
+}
+
+nav {
+    background-color: #2C7DA0;
+}
+nav.dark-mode {
+    background-color: #012A4A;
+}
+ 
+
+logo-link {
+    background-color: #2C7DA0;
+}
+logo-link .dark-mode{
+    background-color: #012A4A;
 }
 
 nav ul { /* menu */
@@ -108,6 +130,10 @@ th { /* cabeçalho da tabela */
     background-color: #61A5C2;
     color: white;
 }
+th .dark-mode{ /* cabeçalho da tabela */
+    background-color: #89C2D9;
+    color: white;
+}
 tr {
     background-color: #89C2D9;
 }
@@ -135,10 +161,16 @@ h2 {
     font-size: 50px;
     text-align: center;
 }
+h2.dark-mode {
+    color: #FFFFFF;
+    transition: color 0.3s;
+    font-size: 50px;
+    text-align: center;
+}
 
 tr.dark-mode {
     color: #ffffff;
-    background-color: #012A4A;
+    background-color: #013A63;
 }
 
 tbody.dark-mode {
@@ -460,18 +492,17 @@ tbody.dark-mode {
 
 
 #featured-news { /* notícias em destaque */
-    background-color: #A9D6E5;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-#featured-news .dark-mode { /* notícias em destaque */
-    background-color: #013A63;
     padding: 10px;
     margin-bottom: 20px;
 }
 
+
 #news-list { /* lista de notícias */
     background-color: #61A5C2;
+    padding: 10px;
+}
+#news-list .dark-mode { /* lista de notícias */
+    background-color: #013A63;
     padding: 10px;
 }
   
@@ -545,6 +576,10 @@ tbody.dark-mode {
     }
     
     #news-list {
+        margin-bottom: 10px;
+        background-color: #A9D6E5;
+    }
+    #news-list .dark-mode {
         margin-bottom: 10px;
         background-color: #A9D6E5;
     }

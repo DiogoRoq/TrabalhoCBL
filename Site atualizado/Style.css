@@ -28,7 +28,7 @@ section.dark-mode {
     color : #FFFFFF;
  }
 #mode-toggle {
-    background: linear-gradient(90deg, hsla(195, 54%, 78%, 1) 0%, hsla(206, 97%, 15%, 1) 100%); 
+    background-color: #014F86;
     color: white; 
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
     border: none; 
@@ -359,7 +359,7 @@ max-width: 33.333%; /* Ajuste este valor com base no número de imagens visívei
 flex: 0 0 auto;
 }
 #prevBtn, #nextBtn {
-position: absolute;
+position: fixed;
 top: 15%;
 right: 93%;
 left: 93%;

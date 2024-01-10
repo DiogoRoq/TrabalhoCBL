@@ -29,7 +29,7 @@
                 <li>
                     <form id= "searchForm" class="search-box">
                         <button class="btn-search"><i class="fas fa-search"></i></button>
-                        <input type="text" id="searchBox" class="input-search" placeholder="Escreva para pesquisar...">
+                        <input type="text" id="searchBox" class="input-search" placeholder="Pesquise aqui...">
                     </form>
                 </li>
                 <button onclick="toggleDarkMode()" id="mode-toggle">Toggle Dark Mode</button>
@@ -41,43 +41,46 @@
     <main>
         
         <!-- inicio do carrossel  -->
-        <div class="carousel-container">
-            <div class="carousel-slide">
-              <img src="images_for_gallery\carrossel1.png" alt="Imagem 1">
-              <img src="images_for_gallery\carrossel2.png" alt="Imagem 2">
-              <img src="images_for_gallery\carrossel3.png" alt="Imagem 3">
-              <img src="images_for_gallery\carrossel3.png" alt="Imagem 3">
-              <!-- Adicione mais imagens conforme necessário -->
-            </div>
-            <button id="prevBtn">Anterior</button>
-            <button id="nextBtn">Próximo</button>
-          </div>
-            <!-- fim do carrossel  -->
-
+        
         <section class="darkable" id="featured-news">
             <h2>Iliteracia Tecnológica em Portugal</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                  <img src="images_for_gallery\carrossel1.png" alt="Imagem 1">
+                  <img src="images_for_gallery\carrossel2.png" alt="Imagem 2">
+                  <img src="images_for_gallery\carrossel3.png" alt="Imagem 3">
+                  <img src="images_for_gallery\carrossel4.png" alt="Imagem 4">
+                  <img src="images_for_gallery\carrossel5.png" alt="Imagem 5">
+                  <img src="images_for_gallery\carrossel6.png" alt="Imagem 6">
+                  <img src="images_for_gallery\carrossel7.png" alt="Imagem 7">
+                  <img src="images_for_gallery\carrossel8.png" alt="Imagem 8">
+                </div>
+                <button id="prevBtn">Anterior</button>
+                <button id="nextBtn">Próximo</button>
+              </div>
+                <!-- fim do carrossel  -->
             
             <table>
                 <thead>
-                    <tr>
-                <th></th>
+                <tr>
+                <th ></th>
                 <th>Saber Mais</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="darkable">
                 <td>Estatísticas Atuais sobre Iliteracia Tecnológica em Portugal</td>
                 <td><a href="noticia1.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Impacto da Iliteracia Tecnológica no Mercado de Trabalho</td>
                 <td><a href="noticia2.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Desafios na Educação e Iliteracia Tecnológica</td>
                 <td><a href="noticia3.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Dados Estatisticos </td>
                 <td><a href="noticia4.html">Ver Detalhes</a></td>
             </tr>
@@ -89,41 +92,37 @@
 
 
 <section id="news-list" class="list-view darkable">
-          <table>
-
+    <button onclick="sortTable()">Ordenar Alfabeticamente</button>
+          <table id="ordenacao">
               <tbody>
 
                 
                 <tr class="news-item darkable">
                     <div class="imagem-container">
-                    <td class="news-image">
+                    <td class="news-image darkable">
                         <img src="noticia1.png" alt="Notícia 1">
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://iliteraciatech.000webhostapp.com/" class="facebook-icon" data-social="facebook">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://iliteraciatech.000webhostapp.com/" class="facebook-icon darkable" data-social="facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="https://twitter.com/intent/tweet?url=https://iliteraciatech.000webhostapp.com/" class="twitter-icon" data-social="twitter">
+                            <a href="https://twitter.com/intent/tweet?url=https://iliteraciatech.000webhostapp.com/" class="twitter-icon darkable" data-social="twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://iliteraciatech.000webhostapp.com/" class="linkedin-icon" data-social="linkedin">
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://iliteraciatech.000webhostapp.com/" class="linkedin-icon darkable" data-social="linkedin">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                             <a href="https://api.whatsapp.com/send?text=https://iliteraciatech.000webhostapp.com/" class="whatsapp-icon" data-social="whatsapp">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
-                        </div>
-                    </div>
                     </td>
-                    
                     <td class="news-content darkable">
                         <h3>Desafio Tecnológico: Idosos e o Mundo dos Smartphones</h3>
                         <p>A crescente complexidade dos smartphones tem se tornado um desafio significativo para a população idosa em Portugal. Enquanto os jovens navegam com facilidade, muitos idosos se veem confusos e frustrados, lutando para acompanhar as rápidas mudanças tecnológicas.</p>
                     </td>
                 </tr>
-                
                 <tr class="news-item darkable">
                     <div class="imagem-container">
-                  <td class="news-image">
+                  <td class="news-image darkable">
                       <img src="noticia2.png" alt="Notícia 2">
                       <div class="social-icons">
                         <a href="https://www.facebook.com/sharer/sharer.php?u=https://iliteraciatech.000webhostapp.com/" class="facebook-icon" data-social="facebook">
@@ -150,7 +149,7 @@
               
               <tr class="news-item darkable">
                   <div class="imagem-container">
-                  <td class="news-image">
+                  <td class="news-image darkable">
                       <img src="noticia 3.png" alt="Notícia 3">
                       <div class="social-icons">
                         <a href="https://www.facebook.com/sharer/sharer.php?u=https://iliteraciatech.000webhostapp.com/" class="facebook-icon" data-social="facebook">
@@ -168,7 +167,6 @@
                     </div>
                     </div>
                 </td>
-                
                 <td class="news-content darkable">
                     <h3>Promovendo a Inclusão Digital: Cursos de Tecnologia Acessíveis a Todos</h3>
                     <p>Centros de educação em todo o país estão adotando uma abordagem inclusiva para combater a iliteracia tecnológica. Salas de aula repletas de diversidade cultural e etária demonstram o esforço de Portugal em tornar a educação digital acessível a todos, independentemente da idade ou origem.</p>
@@ -177,7 +175,7 @@
             
             <tr class="news-item darkable">
                 <div class="imagem-container">
-              <td class="news-image">
+              <td class="news-image darkable">
                   <img src="noticia4.png" alt="Notícia 4">
                   <div class="social-icons">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://iliteraciatech.000webhostapp.com/" class="facebook-icon" data-social="facebook">

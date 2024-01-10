@@ -1,16 +1,4 @@
 
-
-document.querySelectorAll('#featured-news table tr').forEach(row => {
-    row.addEventListener('mouseover', () => {
-        row.style.backgroundColor = '#ccc';
-    });
-    row.addEventListener('mouseout', () => {
-        row.style.backgroundColor = ' #fff';
-    });
-}); // efeitos hover quando passamos o mouse por cima da tabela 
-
-
-
 document.querySelectorAll('#featured-news table a').forEach(link => {
     link.setAttribute('target', '_blank');
 }); // nova aba quando clica no link 
@@ -42,15 +30,6 @@ if (localStorage.getItem('dark-mode') === 'enabled') {
     enableDarkMode();
 }
 
-// Toggle dark mode
-function toggleDarkMode() {
-    const body = document.body;
-    if (body.classList.contains('dark-mode')) {
-        disableDarkMode();
-    } else {
-        enableDarkMode();
-    }
-}
 
 // Enable dark mode
 function enableDarkMode() {
@@ -60,6 +39,7 @@ function enableDarkMode() {
     });
     // Save dark mode preference to local storage
     localStorage.setItem('dark-mode', 'enabled');
+
 }
 
 // Disable dark mode
@@ -86,25 +66,8 @@ function toggleDarkMode() {
     }
 }
 
-// Enable dark mode
-function enableDarkMode() {
-    document.body.classList.add('dark-mode');
-    document.querySelectorAll('.darkable').forEach(element => {
-        element.classList.add('dark-mode');
-    });
-    // Save dark mode preference to local storage
-    localStorage.setItem('dark-mode', 'enabled');
-}
 
-// Disable dark mode
-function disableDarkMode() {
-    document.body.classList.remove('dark-mode');
-    document.querySelectorAll('.darkable').forEach(element => {
-        element.classList.remove('dark-mode');
-    });
-    // Remove dark mode preference from local storage
-    localStorage.setItem('dark-mode', 'disabled');
-}
+
   document.getElementById('searchForm').addEventListener('submit', function(e) {
     e.preventDefault(); // nao deixa recarregar a pagina
     const searchTerm = document.getElementById('searchBox').value.toLowerCase();
@@ -182,7 +145,40 @@ document.addEventListener('DOMContentLoaded', function() {
       slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     });
   });
-  
+
+
+  //inicio da ordenaçao de tabela
+  function sortTable() {
+    var table, rows, switching, i, x, y, shouldSwitch;
+    table = document.getElementById("ordenacao"); // Substitua com o ID da sua tabela
+    switching = true;
+    // Faça um loop até que nenhuma troca seja feita:
+    while (switching) {
+      // comece dizendo: nenhuma troca é feita:
+      switching = false;
+      rows = table.rows;
+      // Faça um loop por todas as linhas da tabela (exceto o cabeçalho):
+      for (i = 1; i < (rows.length - 1); i++) {
+        // comece dizendo que não deve haver troca:
+        shouldSwitch = false;
+        // Pegue os dois elementos que você deseja comparar, um da linha atual e o próximo:
+        x = rows[i].getElementsByTagName("h3")[0]; // Ajuste o índice [0] se necessário
+        y = rows[i + 1].getElementsByTagName("h3")[0]; // Ajuste o índice [0] se necessário
+        // Verifique se as duas linhas devem trocar de lugar:
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          // Se sim, marque como uma troca e quebre o loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+      if (shouldSwitch) {
+        // Se uma troca foi marcada, faça a troca e marque que uma troca foi feita:
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+      }
+    }
+  }
+// final da ordenaçao de tabela  
 
   // final do js carrossel 
   

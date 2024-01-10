@@ -479,7 +479,7 @@ right: 5px;
     max-width: 90%;
     height: auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     nav ul {
       flex-direction: column;
       align-items: flex-end;
@@ -570,6 +570,7 @@ border-radius: 25px;
     color: #000; /* ou a cor desejada */
     font-size: 24px; /* Ajuste o tamanho dos ícones */
 }
+
 .search-box{
     width: fit-content;
     height: fit-content;
@@ -589,8 +590,9 @@ border-radius: 25px;
     padding-right: 40px;
     color:#fff;
   }
+
   .input-search::placeholder{
-    color:rgba(255,255,255,.5);
+    color:rgba(255, 255, 255, 0.555);
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 100;

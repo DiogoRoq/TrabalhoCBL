@@ -15,15 +15,15 @@ body { /* corpo */
 main {
     background-color: #A9D6E5;
 }
-main .dark-mode {
-    background-color: #A9D6E5;
+main.dark-mode {
+    background-color: #013A63;
 }
 
-body .dark-mode {
+body.dark-mode {
     background-color: #013A63;
     color: #fff;
 }
-section .dark-mode {
+section.dark-mode {
     background-color:#013A63;
     color : #FFFFFF;
  }
@@ -192,9 +192,9 @@ tbody.dark-mode {
     display: flex;
     display: flex;
 }
-.menu-navegacao a .dark-mode {
+.menu-navegacao a.dark-mode {
     text-decoration: none;
-    color: #0e323b; /* Cor do texto do menu */
+    color: #ffffff; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
     display: flex;
     display: flex;
@@ -436,6 +436,10 @@ right: 5px;
     #news-list {
         margin-bottom: 10px;
         background-color: #A9D6E5;
+    }
+    #news-list {
+        margin-bottom: 10px;
+        background-color: #013A63;
     }
     
     footer {

@@ -199,7 +199,7 @@ tbody.dark-mode {
 }
 .menu-navegacao a {
     text-decoration: none;
-    color: #0e323b; /* Cor do texto do menu */
+    color: #012A4A; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
     display: flex;
     display: flex;
@@ -212,7 +212,7 @@ tbody.dark-mode {
     display: flex;
 }
 .menu-item.active a, .menu-navegacao a:hover {
-    border-bottom: 2px solid blue; /* Linha de destaque para a aba ativa e ao passar o mouse */
+    border-bottom: 2px solid #012A4A; /* Linha de destaque para a aba ativa e ao passar o mouse */
 }
 .news-image {
     width: 10%; /* largura da celula*/

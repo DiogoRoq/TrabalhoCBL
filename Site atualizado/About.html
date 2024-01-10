@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <title>Sobre Nós</title>
 </head>
 <body>
@@ -44,27 +43,39 @@
                     <img src="Luccas.jpeg" alt="Foto Perfil">
                     <p>Luccas Pereira</p>
                     <!-- Adicione o botão e a área para exibir o texto -->
-                    <button onclick="toggleText()">Experiência </button>
-                    <div id="textContainer" style="display: none;">Sou o Lucas</div>
+                    <button class="about-button" onclick="toggleText('luccas')">Experiência</button>
+                    <div id="luccasTextContainer" style="display: none;">Sou o Luccas</div>
                 </div>
 
                 <div class="member">
                     <img src="Diogo.png" alt="Foto Perfil">
                     <p>Diogo Roquete</p>
+                    <!-- Adicione o botão e a área para exibir o texto -->
+                    <button class="about-button" onclick="toggleText('diogo')">Experiência</button>
+                    <div id="diogoTextContainer" style="display: none;">Amanhã</div>
                 </div>
 
                 <div class="member">
                     <img src="Telmo.jpg" alt="Foto Perfil">
                     <p>Telmo Dias</p>
+                    <!-- Adicione o botão e a área para exibir o texto -->
+                    <button class="about-button" onclick="toggleText('telmo')">Experiência </button>
+                    <div id="telmoTextContainer" style="display: none;">Sou o telmo</div>
                 </div>
 
                 <div class="member">
                     <img src="rodrigo zhu.png" alt="Foto Perfil">
                     <p>Rodrigo Zhu</p>
+                    <!-- Adicione o botão e a área para exibir o texto -->
+                    <button class="about-button" onclick="toggleText('rodrigo')">Experiência </button>
+                    <div id="rodrigoTextContainer" style="display: none;">Sou o rodrigo</div>
                 </div>
 
                 <div class="member">
                     <p>João Barata</p>
+                    <!-- Adicione o botão e a área para exibir o texto -->
+                    <button onclick="toggleText('joao')">Experiência </button>
+                    <div id="joaoTextContainer" style="display: none;">Sou o Lucas</div>
                 </div>
 
                 <!-- Repita para outros membros -->
@@ -76,4 +87,5 @@
         <p>&copy; 2023 Notícias. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script src="script.js"></script>
 </html>

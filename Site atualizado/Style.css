@@ -561,12 +561,6 @@ a:hover, button:hover { /* links com o mouse em cima */
     border-bottom: 1px solid #d4d4d4; 
 }
 
-.autocomplete-items div:hover {
-    /* Quando passar o mouse sobre um item da lista */
-    background-color: #e9e9e9; 
-}
-
-
 
 .imagem-container {
     position: relative;
@@ -587,23 +581,14 @@ a:hover, button:hover { /* links com o mouse em cima */
 
 /* Estilize os links de compartilhamento conforme necessário */
 .social-icons a {
-    margin: 0 5px;
-    text-decoration: none;
-    /* Adicione mais estilos aqui */
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
 }
 
 
-.share-options {
-    display: none;
-    position: absolute; /* Ajuste conforme necessário */
-    /* Outros estilos de posicionamento e design */
-}
 
-.share-icon {
-    margin: 5px;
-    text-decoration: none;
-    color: #000; /* ou a cor desejada */
-    font-size: 24px; /* Ajuste o tamanho dos ícones */
-}
 
-/* Estilize os botões e ícones conforme necessário */

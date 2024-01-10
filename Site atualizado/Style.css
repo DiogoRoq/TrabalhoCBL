@@ -471,6 +471,32 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
 }
 
+/* css para a galeria de imagens */
+
+#topic-menu {
+    padding: 5px;
+    margin-bottom: 20px;
+    /* Additional styling */
+}
+
+.topic-group {
+    display: none;
+    /* Additional styling */
+}
+
+.topic-group.active {
+    display: flex; /* Or any other display type you prefer */
+    flex-wrap:wrap;
+    /* Additional styling */
+}
+
+.image-item {
+    margin: 10px;
+    /* Additional styling */
+}
+
+/* final do estilo da galeria de imagens */
+
 @media screen and (max-width: 600px) {
     nav ul {
       flex-direction: column;
@@ -644,4 +670,6 @@ a:hover, button:hover { /* links com o mouse em cima */
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
 
-/* Estilize os botões e ícones conforme necessário */
+
+
+

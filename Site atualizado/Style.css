@@ -79,6 +79,10 @@ a.logo-link.dark-mode{
     background-color: #012A4A;
 }
 
+img.rounded {
+    border-radius: 50%
+}
+
 nav ul { /* menu */
     display: flex;
     justify-content: flex-end;

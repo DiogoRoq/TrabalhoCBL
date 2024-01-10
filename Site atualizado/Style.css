@@ -66,10 +66,10 @@ nav.dark-mode {
 }
  
 
-logo-link {
+a.logo-link {
     background-color: #2C7DA0;
 }
-logo-link .dark-mode{
+a.logo-link.dark-mode{
     background-color: #012A4A;
 }
 
@@ -372,7 +372,7 @@ right: 5px;
     background-color: #61A5C2;
     padding: 10px;
 }
-#news-list .dark-mode { /* lista de notícias */
+#news-list.dark-mode { /* lista de notícias */
     background-color: #013A63;
     padding: 10px;
 }
@@ -434,10 +434,6 @@ right: 5px;
         margin-bottom: 10px;
     }
     #news-list {
-        margin-bottom: 10px;
-        background-color: #A9D6E5;
-    }
-    #news-list .dark-mode {
         margin-bottom: 10px;
         background-color: #A9D6E5;
     }

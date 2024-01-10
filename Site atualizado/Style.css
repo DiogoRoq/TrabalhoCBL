@@ -385,12 +385,15 @@ a:hover, button:hover { /* links com o mouse em cima */
     color: #dddddd; /* Icon hover color */
 }
 
+/* final css icones*/
+
 /*inicio css carrossel*/
 .carousel-container {
-    position: relative;
-    max-width: 600px; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Ajuste para o tamanho desejado */
     margin: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   
   .carousel-slide {
@@ -398,13 +401,14 @@ a:hover, button:hover { /* links com o mouse em cima */
   }
   
   .carousel-slide img {
-    max-width: 100%;
-    display: block;
+    min-width: 33.333%; /* Para 3 imagens visíveis, ajuste conforme necessário */
+    max-width: 33.333%; /* Ajuste este valor com base no número de imagens visíveis */
+    flex: 0 0 auto;
   }
   
   #prevBtn, #nextBtn {
     position: absolute;
-    top: 50%;
+    top: 8%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -414,15 +418,15 @@ a:hover, button:hover { /* links com o mouse em cima */
   }
   
   #prevBtn {
-    left: 10px;
+    left: 5px;
   }
   
   #nextBtn {
-    right: 10px;
+    right: 5px;
   }
 /* final do css carrossel*/  
 
-/* final css icones*/
+
 
 #featured-news { /* notícias em destaque */
     background-color: #A9D6E5;

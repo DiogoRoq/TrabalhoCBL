@@ -612,6 +612,13 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
   }
 
+.about-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
 
 .searchBox div {
     padding: 10px;

@@ -136,6 +136,15 @@ h2 {
     text-align: center;
 }
 
+tr.dark-mode {
+    color: #ffffff;
+    background-color: #012A4A;
+}
+
+tbody.dark-mode {
+    color: #ffffff;
+    background-color: #013A63;
+}
 
 
 .logo-link img {
@@ -501,12 +510,6 @@ h2 {
         
     }
     
-    .login-button-container {
-        position: absolute;
-        top: 5px;  /* Ajuste conforme necessário */
-        right: 15px; /* Ajuste conforme necessário */
-        z-index: 100; /* Garante que o botão fique sobre outros elementos */
-    }
 
     .news-image {
         width: 100%;

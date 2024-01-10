@@ -63,25 +63,25 @@
             
             <table>
                 <thead>
-                    <tr>
-                <th></th>
+                <tr>
+                <th ></th>
                 <th>Saber Mais</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="darkable">
                 <td>Estatísticas Atuais sobre Iliteracia Tecnológica em Portugal</td>
                 <td><a href="noticia1.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Impacto da Iliteracia Tecnológica no Mercado de Trabalho</td>
                 <td><a href="noticia2.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Desafios na Educação e Iliteracia Tecnológica</td>
                 <td><a href="noticia3.html">Ver Detalhes</a></td>
             </tr>
-            <tr>
+            <tr class="darkable">
                 <td>Dados Estatisticos </td>
                 <td><a href="noticia4.html">Ver Detalhes</a></td>
             </tr>
@@ -93,8 +93,8 @@
 
 
 <section id="news-list" class="list-view darkable">
-          <table>
-
+    <button onclick="sortTable()">Ordenar Alfabeticamente</button>
+          <table id="ordenacao">
               <tbody>
 
                 
@@ -168,7 +168,6 @@
                     </div>
                     </div>
                 </td>
-                
                 <td class="news-content darkable">
                     <h3>Promovendo a Inclusão Digital: Cursos de Tecnologia Acessíveis a Todos</h3>
                     <p>Centros de educação em todo o país estão adotando uma abordagem inclusiva para combater a iliteracia tecnológica. Salas de aula repletas de diversidade cultural e etária demonstram o esforço de Portugal em tornar a educação digital acessível a todos, independentemente da idade ou origem.</p>

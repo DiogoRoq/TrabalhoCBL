@@ -120,6 +120,7 @@ tr:hover { /* linhas com o mouse em cima */
     background-color: #468FAF;
 }
 
+
 a { /* links */
     color: #0a49ae;
     transition: color 0.3s;
@@ -391,6 +392,12 @@ h2 {
     color: #172394; /* Icon color */
     margin: 0 5px;
     font-size: 20px; /* Icon size */
+}
+.social-icons a .dark-mode {
+    color: #2C7DA0;
+    margin: 0 5px;
+    font-size: 20px; 
+
 }
 
 .social-icons a:hover {

@@ -23,12 +23,10 @@ body .dark-mode {
     background-color: #013A63;
     color: #fff;
 }
-
 section .dark-mode {
     background-color:#013A63;
     color : #FFFFFF;
  }
-
 #mode-toggle {
     background-color: #4a4a4a; 
     color: white; 
@@ -43,7 +41,6 @@ section .dark-mode {
     align-items: center; 
     justify-content: center; 
 }
-
 header { /* cabeçalho */
     background-color: #2C7DA0;
     color: #FFFFFF;
@@ -84,7 +81,6 @@ nav ul { /* menu */
     padding: 0;
     text-align: center;
 }
-
 nav ul li { /* itens do menu */
     display: inline;
     margin-left: 10px;
@@ -92,18 +88,15 @@ nav ul li { /* itens do menu */
     padding: 5px;
     
 }
-
 nav ul li a { /* links do menu */
     color: rgb(255, 255, 255);
     text-decoration: none;
     
 }
-
 main { /* conteúdo principal */
     padding: 10px;
     
 }
-
 footer { /* rodapé */
     background-color: #468FAF;
     color: DARK-GREY;
@@ -112,20 +105,17 @@ footer { /* rodapé */
     bottom: 0;
     width: 100%;
 }
-
 table { /* tabela */
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     
 }
-
 th, td { /* células da tabela */
     padding: 12px;
     border: 1px solid #2C7DA0;
     text-align: left;
 }
-
 th { /* cabeçalho da tabela */
     background-color: #61A5C2;
     color: white;
@@ -145,13 +135,10 @@ tr:nth-child(even) { /* linhas pares */
 tr:hover { /* linhas com o mouse em cima */
     background-color: #468FAF;
 }
-
-
 a { /* links */
     color: #0a49ae;
     transition: color 0.3s;
 }
-
 a:hover, button:hover { /* links com o mouse em cima */
     color: #357ae8;
 }
@@ -172,41 +159,32 @@ tr.dark-mode {
     color: #ffffff;
     background-color: #013A63;
 }
-
 tbody.dark-mode {
     color: #ffffff;
     background-color: #013A63;
 }
-
-
 .logo-link img {
     height: 70px; /* Ajuste a altura conforme necessário */
     width: auto; /* Mantém a proporção da imagem */
     align-self: flex;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 .mode-toggle {
     display:flex;
     align-self: flex;
     margin: 10px;
-    
 }
 .mode-toggle {
     display:flex;
 }
-
-
 .menu-navegacao li {
     margin: 0 5px; /* Espaçamento entre os itens do menu */
     border-right: 1px solid #518bbb; /* Linha entre os itens */
     padding-right: 20px; /* Espaço entre o texto e a linha */
 }
-
 .menu-navegacao li:last-child {
     border-right: none; /* Remove a borda do último item */
 }
-
 .menu-navegacao a {
     text-decoration: none;
     color: #0e323b; /* Cor do texto do menu */
@@ -221,115 +199,39 @@ tbody.dark-mode {
     display: flex;
     display: flex;
 }
-
 .menu-item.active a, .menu-navegacao a:hover {
     border-bottom: 2px solid blue; /* Linha de destaque para a aba ativa e ao passar o mouse */
 }
-
 .news-image {
     width: 10%; /* largura da celula*/
 }
 .news-image .dark-mode {
     width: 10%; /* largura da celula*/
 }
-
 .news-image img {
     width: 85%; /* ocupa todo o espaço */
     height: auto;
     margin-bottom: 20px;
 }
-
 .news-content {
     vertical-align: top; /* alinha a noticia */
     padding-left: 20px; /* espaçamento */
 }
-
 .news-item h3 { /* titulo da noticia */
     margin-top: 0;
 }
-
-.news-item p { /* texto da noticia */
-    
+.news-item p { /* texto da noticia */   
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
-
 .fade-in { /* animacao de entrada */
     animation: fadeIn 0.5s;
 }
-
 .fade-out { /* animacao de saída */
     animation: fadeOut 0.5s;
 }
-
-.support-section {
-    padding: 20px;
-    background-color: #eee;
-
-}
-
-.support-contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.input-field {
-    margin-bottom: 15px; /* Aumenta a margem abaixo de cada campo */
-    padding: 10px; /* Aumenta o preenchimento dentro de cada campo */
-    width: calc(100% - 20px); /* Ajuste a largura conforme necessário */
-    /* Outros estilos como borda, cor, etc. */
-}
-
-.forum-section {
-    padding: 20px;
-    /* Outros estilos conforme necessário */
-}
-
-.forum-topics {
-    margin-top: 20px;
-}
-
-.forum-topic {
-    display: block;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f0f0f0; /* Cor de fundo para cada tópico */
-    text-decoration: none;
-    color: #000000; /* Cor do texto */
-    border-radius: 5px;
-}
-
 .forum-topic:hover {
     background-color: #e0e0e0; /* Cor de fundo ao passar o mouse */
 }
-
-.discussion-topic {
-    padding: 20px;
-}
-
-.message-area {
-    margin-bottom: 20px;
-    border: 1px solid #ccc; /* Borda para a área de mensagens */
-    padding: 10px;
-    max-height: 500px; /* Ajuste conforme necessário */
-    overflow-y: auto; /* Permite rolagem se muitas mensagens */
-}
-
-.message {
-    background-color: #f0f0f0;
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.message-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
 .message-form button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -338,56 +240,47 @@ tbody.dark-mode {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .message-form button:hover {
     background-color: #0056b3;
 }
-
 .message {
     display: flex;
     align-items: flex-start; /* Alinha a imagem e o texto verticalmente */
     margin-bottom: 10px;
     padding: 8px;
 }
-
 .profile-pic {
     width: 50px; /* Ajuste o tamanho conforme necessário */
     height: 50px; /* Ajuste o tamanho conforme necessário */
     border-radius: 50%; /* Torna a imagem circular */
     margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
-
 .about-us {
     padding: 20px;
     background-color: #A9D6E5;
     color: #05274e;
 }
-
 .team-members {
     display: flex;
     flex-wrap: wrap; /* Para ajustar responsivamente */
     justify-content: space-around; /* Espaçamento uniforme */
     margin-top: 20px;
 }
-
 .member {
     text-align: center; /* Centraliza o texto e a imagem */
     margin-bottom: 20px;
 }
-
 .member img {
     width: 150px; /* Ajuste conforme necessário */
     height: 150px; /* Ajuste conforme necessário */
     border-radius: 50%; /* Para imagens redondas */
     margin-bottom: 10px;
 }
-
 .news-article {
     padding: 20px;
     background-color: #A9D6E5;
     color: #000;
 }
-
 .news-image-notice  {
     width: 40%;
     height: auto;
@@ -396,39 +289,32 @@ tbody.dark-mode {
     align-items: center;
     margin-bottom: 20px;
 }
-
 .news-description {
     text-align: justify;
     margin-bottom: 50px;
     font-family: sans-serif;
     font-size: 25px;
-
 }
 .news-article-graph {
     padding: 20px;
     max-width: 800px; /* Ajuste a largura conforme necessário */
     margin: auto; /* Centraliza a seção na página */
 }
-
 .news-graphic {
     width: 100%; /* Faz a imagem se ajustar à largura do container */
     height: auto; /* Mantém a proporção da imagem */
     margin-bottom: 20px;
 }
-
 .news-article-graph h1 {
     font-size: 2em;
     margin-bottom: 25px;
     text-align: center;
 }
-
 .news-description {
     font-size: 1.2em;
     line-height: 1.6;
     text-align: justify; /* Para um alinhamento justificado do texto */
 }
-
-/* css para os icones da rede social */
 .social-icons a {
     color: #172394; /* Icon color */
     margin: 0 5px;
@@ -438,59 +324,44 @@ tbody.dark-mode {
     color: #2C7DA0;
     margin: 0 5px;
     font-size: 20px; 
-
 }
-
 .social-icons a:hover {
     color: #dddddd; /* Icon hover color */
 }
-
-/* final css icones*/
-
-/*inicio css carrossel*/
 .carousel-container {
     max-width: 600px; /* Ajuste para o tamanho desejado */
     margin: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
-  }
-  
-  .carousel-slide {
-    display: flex;
-  }
-  
-  .carousel-slide img {
-    min-width: 33.333%; /* Para 3 imagens visíveis, ajuste conforme necessário */
-    max-width: 33.333%; /* Ajuste este valor com base no número de imagens visíveis */
-    flex: 0 0 auto;
-  }
-  
-  #prevBtn, #nextBtn {
-    position: absolute;
-    top: 15%;
-    right: 93%;
-    left: 93%;
-    transform: translateY(-50%);
-    background-color: rgba(3, 44, 107, 0.825);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 14px;
-  }
-  
-  #prevBtn {
-    left: 5px;
-  }
-  
-  #nextBtn {
-    right: 5px;
-  }
-/* final do css carrossel*/  
-
-
-
+}
+.carousel-slide {
+display: flex;
+}
+.carousel-slide img {
+min-width: 33.333%; /* Para 3 imagens visíveis, ajuste conforme necessário */
+max-width: 33.333%; /* Ajuste este valor com base no número de imagens visíveis */
+flex: 0 0 auto;
+}
+#prevBtn, #nextBtn {
+position: absolute;
+top: 15%;
+right: 93%;
+left: 93%;
+transform: translateY(-50%);
+background-color: rgba(3, 44, 107, 0.825);
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 14px;
+}
+#prevBtn {
+left: 5px;
+}
+#nextBtn {
+right: 5px;
+}
 #featured-news { /* notícias em destaque */
     padding: 10px;
     margin-bottom: 20px;
@@ -524,57 +395,44 @@ tbody.dark-mode {
         transform: translateX(-100%);
     }
 }
-
-
 @media screen and (max-width: 600px) { /* responsividade */
     
     nav ul {
         flex-direction: flex-end;
     }
-    
     nav ul li { /* itens do menu */
         display: inline;  
         font-size: 11px; 
         width: auto;
         height: auto;
         padding: 5px;
-        
     }
-    
-
     .news-image {
         width: 100%;
     }
-    
     .news-content {
         padding-left: 0;
     }
-    
     .logo-link img {
         height: 0px; /* Ajuste a altura conforme necessário */
         width: auto; /* Mantém a proporção da imagem */
         align-self: flex; /* Alinha a imagem à direita */
     }
-    
     #searchForm {
         flex-direction:column;
         width: 80%;
         height: auto;
         padding: 2px;
         align-self:baseline;
-
     }
-    
     #searchBox {
         width: 80%;
         padding: 2px;
         margin-right: 10px;
     }
-    
     #featured-news {
         margin-bottom: 10px;
     }
-    
     #news-list {
         margin-bottom: 10px;
         background-color: #A9D6E5;
@@ -586,42 +444,28 @@ tbody.dark-mode {
     
     footer {
         margin-top: auto;
-
     }
 }
-
-/* css para a galeria de imagens */
-
 #topic-menu {
     padding: 5px;
     margin-bottom: 20px;
-    /* Additional styling */
 }
-
 .topic-group {
     display: none;
-    /* Additional styling */
 }
 
 .topic-group.active {
     display: flex; /* Or any other display type you prefer */
     flex-wrap:wrap;
-    /* Additional styling */
 }
-
 .image-item {
     margin: 10px;
-    /* Additional styling */
 }
-
-/* final do estilo da galeria de imagens */
-
 @media screen and (max-width: 600px) {
     nav ul {
       flex-direction: column;
       align-items: flex-end;
     }
-  
     nav ul li {
       display: block;
       font-size: 14px;
@@ -629,26 +473,21 @@ tbody.dark-mode {
       text-align: right;
       margin-bottom: 5px;
     }
-  
     .login-button-container {
       top: 5px;
       right: 15px;
     }
-  
     .news-image {
       width: 100%;
     }
-  
     .news-content {
       padding-left: 0;
     }
-  
     .logo-link img {
       height: 60px;
       width: auto;
       align-self: flex-end;
     }
-  
     #searchForm {
       flex-direction: column;
       width: 100%;
@@ -656,24 +495,20 @@ tbody.dark-mode {
       padding: 5px;
       align-self: baseline;
     }
-  
     #searchBox {
       width: 100%;
       padding: 5px;
       margin-right: 0;
     }
-  
     #featured-news,
     #news-list {
       margin-bottom: 10px;
       padding: 10px;
     }
-  
     footer {
       position: static;
     }
   }
-
 .about-button {
     background-color: rgb(34, 108, 121);
     color: white;
@@ -681,20 +516,16 @@ tbody.dark-mode {
     padding: 10px;
     cursor: pointer;
 }
-
 .searchBox div {
     padding: 10px;
     cursor: pointer;
     background-color: #fff; 
     border-bottom: 1px solid #d4d4d4; 
 }
-
-
 .imagem-container {
     position: relative;
     display: inline-block;
 }
-
 .imagem-container .social-icons {
     display: none;
     position: absolute;
@@ -702,32 +533,23 @@ tbody.dark-mode {
     left: 10px; /* Ajuste conforme necessário */
     z-index: 10;
 }
-
 .imagem-container:hover .social-icons {
     display: block;
 }
-
-/* Estilize os links de compartilhamento conforme necessário */
 .social-icons a {
     margin: 0 5px;
     text-decoration: none;
-    /* Adicione mais estilos aqui */
 }
-
-
 .share-options {
     display: none;
     position: absolute; /* Ajuste conforme necessário */
-    /* Outros estilos de posicionamento e design */
 }
-
 .share-icon {
     margin: 5px;
     text-decoration: none;
     color: #000; /* ou a cor desejada */
     font-size: 24px; /* Ajuste o tamanho dos ícones */
 }
-
 .search-box{
     width: fit-content;
     height: fit-content;
@@ -782,7 +604,3 @@ tbody.dark-mode {
     border-bottom:1px solid rgba(255,255,255,.5);
     transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
   }
-
-
-
-

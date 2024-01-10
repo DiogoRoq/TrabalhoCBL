@@ -12,12 +12,6 @@ body { /* corpo */
     display: flex;
     flex-direction: column;
 }
-main {
-    background-color: #A9D6E5;
-}
-main .dark-mode {
-    background-color: #A9D6E5;
-}
 
 body .dark-mode {
     background-color: #013A63;
@@ -58,21 +52,6 @@ header.dark-mode { /* cabeçalho */
     align-items: flex;
 }
 
-nav {
-    background-color: #2C7DA0;
-}
-nav.dark-mode {
-    background-color: #012A4A;
-}
- 
-
-logo-link {
-    background-color: #2C7DA0;
-}
-logo-link .dark-mode{
-    background-color: #012A4A;
-}
-
 nav ul { /* menu */
     display: flex;
     justify-content: flex-end;
@@ -88,11 +67,13 @@ nav ul li { /* itens do menu */
     padding: 5px;
     
 }
+
 nav ul li a { /* links do menu */
     color: rgb(255, 255, 255);
     text-decoration: none;
     
 }
+
 main { /* conteúdo principal */
     padding: 10px;
     
@@ -144,12 +125,6 @@ a:hover, button:hover { /* links com o mouse em cima */
 }
 h2 {
     color: #000000;
-    transition: color 0.3s;
-    font-size: 50px;
-    text-align: center;
-}
-h2.dark-mode {
-    color: #FFFFFF;
     transition: color 0.3s;
     font-size: 50px;
     text-align: center;
@@ -321,12 +296,15 @@ tbody.dark-mode {
     font-size: 20px; /* Icon size */
 }
 .social-icons a .dark-mode {
-    color: #2C7DA0;
+    color: #89C2D9;
     margin: 0 5px;
     font-size: 20px; 
 }
 .social-icons a:hover {
-    color: #dddddd; /* Icon hover color */
+    color: #ffffff; /* Icon hover color */
+}
+.social-icons a:hover .dark-mode {
+    color: #ffffff; /* Icon hover color */
 }
 .carousel-container {
     max-width: 600px; /* Ajuste para o tamanho desejado */
@@ -367,13 +345,8 @@ right: 5px;
     margin-bottom: 20px;
 }
 
-
 #news-list { /* lista de notícias */
     background-color: #61A5C2;
-    padding: 10px;
-}
-#news-list .dark-mode { /* lista de notícias */
-    background-color: #013A63;
     padding: 10px;
 }
   
@@ -434,10 +407,6 @@ right: 5px;
         margin-bottom: 10px;
     }
     #news-list {
-        margin-bottom: 10px;
-        background-color: #A9D6E5;
-    }
-    #news-list .dark-mode {
         margin-bottom: 10px;
         background-color: #A9D6E5;
     }

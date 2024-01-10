@@ -11,12 +11,12 @@ body { /* corpo */
 }
 
 body .dark-mode {
-    background-color: #4a4a4a;
+    background-color: #012A4A;
     color: #fff;
 }
 
 section .dark-mode {
-    background-color:#252922 ;
+    background-color:#013A63 ;
  }
 
 #mode-toggle {
@@ -35,24 +35,16 @@ section .dark-mode {
 }
 
 header { /* cabeçalho */
-    background-color: #468FAF;
-    color: white;
+    background-color: #2C7DA0;
+    color: #FFFFFF;
     padding: 5px 0;
     font-size: 1.2em;
     display: flex;
     align-items: flex;
 }
-header .dark-mode { /* cabeçalho */
-    background-color: rgb(35, 4, 61);
-    color: white;
-    padding: 5px 0;
-    font-size: 1.2em;
-    display: flex;
-    align-items: flex;
-}
-header .dark-mode { /* cabeçalho */
-    background-color: rgb(35, 4, 61);
-    color: white;
+header.dark-mode { /* cabeçalho */
+    background-color: #012A4A;
+    color: #C6DAF1;
     padding: 5px 0;
     font-size: 1.2em;
     display: flex;
@@ -165,6 +157,13 @@ a:hover, button:hover { /* links com o mouse em cima */
 }
 
 .menu-navegacao a {
+    text-decoration: none;
+    color: #0e323b; /* Cor do texto do menu */
+    padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
+    display: flex;
+    display: flex;
+}
+.menu-navegacao a .dark-mode {
     text-decoration: none;
     color: #0e323b; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */

@@ -16,19 +16,20 @@
     <nav class="menu-navegacao darkable"> 
         <ul>
             <a href="index.html" class=" darkable logo-link">
-                <img src="lotipo.png" alt="Logotipo do Site">
+                <img class="rounded" src="lotipo.png" alt="Logotipo do Site">
             </a>
-            <li class="menu-item darkable"><a class="darkable" href="index.html">Início</a></li>
-            <li class="menu-item darkable"><a class="darkable" href="About.html">Sobre nós</a></li>
-            <li class="menu-item darkable"><a class="darkable" href="gallery.html">Galeria</a></li>
-            <button onclick="toggleDarkMode()" id="mode-toggle">Toggle Dark Mode</button>
+            <li class="menu-item darkable"><a href="index.html">Início</a></li>
+            <li class="menu-item darkable"><a href="About.html">Sobre nós</a></li>
+            <li class="menu-item darkable"><a href="gallery.html">Galeria</a></li>
+            <button onclick="toggleDarkMode()" id="mode-toggle">Alterar Tema</button>
         </ul>
     </nav>
 <main class="darkable">
     <div>
         <label for="topic-menu">Escolher Tópico:</label>
         <select id="topic-menu">
-            <option value="all">Geral</option>
+            <option selected>Escolha uma opção</option>
+            <option value="all">Todos</option>
             <option value="topic1">Dados Estatísticos</option>
             <option value="topic2">Projeção Dados Futuros</option>
         </select>

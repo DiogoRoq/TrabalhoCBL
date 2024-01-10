@@ -128,6 +128,12 @@ a { /* links */
 a:hover, button:hover { /* links com o mouse em cima */
     color: #357ae8;
 }
+h2 {
+    color: #000000;
+    transition: color 0.3s;
+    font-size: 50px;
+    text-align: center;
+}
 
 
 
@@ -414,13 +420,16 @@ a:hover, button:hover { /* links com o mouse em cima */
   
   #prevBtn, #nextBtn {
     position: absolute;
-    top: 8%;
+    top: 15%;
+    right: 93%;
+    left: 93%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(3, 44, 107, 0.825);
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 14px;
   }
   
   #prevBtn {

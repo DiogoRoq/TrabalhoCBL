@@ -123,11 +123,6 @@ function disableDarkMode() {
 });
 
 
-document.getElementById('loginButton').addEventListener('click', function() {
-    window.location.href = 'login.html'; // Redireciona para a página de login
-});
-
-
 AOS.init({
     duration: 3000, // duração da animação em milissegundos
     delay: 6000, // atraso da animação em milissegundos

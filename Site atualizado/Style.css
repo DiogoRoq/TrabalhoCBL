@@ -448,6 +448,11 @@ h2 {
     padding: 10px;
     margin-bottom: 20px;
 }
+#featured-news .dark-mode { /* notícias em destaque */
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 
 #news-list { /* lista de notícias */
     background-color: #61A5C2;

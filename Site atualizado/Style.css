@@ -64,7 +64,12 @@ nav {
 nav.dark-mode {
     background-color: #012A4A;
 }
- 
+ a{
+color: #01497C;
+ }
+ a.dark-mode{
+    color: #61A5C2;
+ }
 
 a.logo-link {
     background-color: #2C7DA0;

@@ -375,6 +375,19 @@ a:hover, button:hover { /* links com o mouse em cima */
     text-align: justify; /* Para um alinhamento justificado do texto */
 }
 
+/* css para os icones da rede social */
+.social-icons a {
+    color: #172394; /* Icon color */
+    margin: 0 5px;
+    font-size: 20px; /* Icon size */
+}
+
+.social-icons a:hover {
+    color: #dddddd; /* Icon hover color */
+}
+
+/* final css icones*/
+
 #featured-news { /* notícias em destaque */
     background-color: #A9D6E5;
     padding: 10px;
@@ -555,19 +568,6 @@ a:hover, button:hover { /* links com o mouse em cima */
     }
   }
 
-
-
-.autocomplete-items {
-    /* Sugestões de estilos para a lista de sugestões */
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    top: 100%;
-    left: 0;
-    right: 0;
-}
 
 .searchBox div {
     padding: 10px;

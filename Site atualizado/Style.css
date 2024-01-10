@@ -120,6 +120,7 @@ tr:hover { /* linhas com o mouse em cima */
     background-color: #468FAF;
 }
 
+
 a { /* links */
     color: #0a49ae;
     transition: color 0.3s;
@@ -401,6 +402,12 @@ tbody.dark-mode {
     margin: 0 5px;
     font-size: 20px; /* Icon size */
 }
+.social-icons a .dark-mode {
+    color: #2C7DA0;
+    margin: 0 5px;
+    font-size: 20px; 
+
+}
 
 .social-icons a:hover {
     color: #dddddd; /* Icon hover color */
@@ -458,7 +465,7 @@ tbody.dark-mode {
     margin-bottom: 20px;
 }
 #featured-news .dark-mode { /* notícias em destaque */
-    background-color: #012A4A;
+    background-color: #013A63;
     padding: 10px;
     margin-bottom: 20px;
 }

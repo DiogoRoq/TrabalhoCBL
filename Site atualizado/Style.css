@@ -120,8 +120,8 @@ th { /* cabeçalho da tabela */
     background-color: #61A5C2;
     color: white;
 }
-th .dark-mode{ /* cabeçalho da tabela */
-    background-color: #89C2D9;
+th.dark-mode{ /* cabeçalho da tabela */
+    background-color: #01497C;
     color: white;
 }
 tr {

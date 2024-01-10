@@ -152,3 +152,52 @@ AOS.init({
         window.open(shareUrl, '_blank').focus();
     });
 });
+
+// inicio do js para o carrossel
+
+document.addEventListener('DOMContentLoaded', function() {
+    const slide = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    
+    // Botões
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+  
+    // Contador
+    let counter = 0;
+    const size = images[0].clientWidth;
+  
+    slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  
+    // Botão Próximo
+    nextBtn.addEventListener('click', () => {
+      if (counter >= images.length - 1) return;
+      slide.style.transition = "transform 0.4s ease-in-out";
+      counter++;
+      slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    });
+  
+    // Botão Anterior
+    prevBtn.addEventListener('click', () => {
+      if (counter <= 0) return;
+      slide.style.transition = "transform 0.4s ease-in-out";
+      counter--;
+      slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    });
+  
+    // Loop para voltar ao início
+    slide.addEventListener('transitionend', () => {
+      if (images[counter].id === 'lastClone') {
+        slide.style.transition = "none";
+        counter = images.length - 2;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      }
+      if (images[counter].id === 'firstClone') {
+        slide.style.transition = "none";
+        counter = images.length - counter;
+        slide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      }
+    });
+  });
+
+  // final do js carrossel 

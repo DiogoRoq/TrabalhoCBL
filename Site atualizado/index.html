@@ -13,41 +13,55 @@
     <title>Notícias</title>
 </head>
 <body>
+    
     <header class="darkable">
         <div data-aos="fade-up">
-        <nav class="menu-navegacao">
-            
-            
-            <ul>
-                <a href="index.html" class="logo-link">
-                    <img src="lotipo.png" alt="Logotipo do Site">
-                </a>
-                <li class="menu-item active"><a href="index.html">Início</a></li>
-                <li class="menu-item"><a href="forum.html">Fórum</a></li>
-                <li class="menu-item "><a href="support.html">Suporte</a></li>
-                <li class="menu-item "><a href="About.html">Sobre nós</a></li>
+            <nav class="menu-navegacao">
+                
+                
+                <ul>
+                    <a href="index.html" class="logo-link">
+                        <img src="lotipo.png" alt="Logotipo do Site">
+                    </a>
+                    <li class="menu-item active"><a href="index.html">Início</a></li>
+                    <li class="menu-item"><a href="forum.html">Fórum</a></li>
+                    <li class="menu-item "><a href="support.html">Suporte</a></li>
+                    <li class="menu-item "><a href="About.html">Sobre nós</a></li>
                 <li class="menu-item "><a href="gallery.html">Galeria</a></li>
                 
                 <li>
                     <form id= "searchForm" class="search-box">
                         <button class="btn-search"><i class="fas fa-search"></i></button>
-    <input type="text" id="searchBox" class="input-search" placeholder="Escreva para pesquisar...">
+                        <input type="text" id="searchBox" class="input-search" placeholder="Escreva para pesquisar...">
                     </form>
                 </li>
                 <button onclick="toggleDarkMode()" id="mode-toggle">Toggle Dark Mode</button>
             </ul>
         </nav>
     </div>
-    </header>
-    <div data-aos="fade-up">
+</header>
+<div data-aos="fade-up">
     <main>
         
+        <!-- inicio do carrossel  -->
+        <div class="carousel-container">
+            <div class="carousel-slide">
+              <img src="images_for_gallery\carrossel1.png" alt="Imagem 1">
+              <img src="images_for_gallery\carrossel2.png" alt="Imagem 2">
+              <img src="images_for_gallery\carrossel3.png" alt="Imagem 3">
+              <!-- Adicione mais imagens conforme necessário -->
+            </div>
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Próximo</button>
+          </div>
+            <!-- fim do carrossel  -->
+
         <section class="darkable" id="featured-news">
             <h2>Iliteracia Tecnológica em Portugal</h2>
             
             <table>
-        <thead>
-            <tr>
+                <thead>
+                    <tr>
                 <th></th>
                 <th>Saber Mais</th>
             </tr>

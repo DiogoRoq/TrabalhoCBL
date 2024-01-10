@@ -474,8 +474,10 @@ right: 5px;
     display: flex; /* Or any other display type you prefer */
     flex-wrap:wrap;
 }
-.image-item {
-    margin: 10px;
+.image-item img{
+    margin: 50px;
+    max-width: 90%;
+    height: auto;
 }
 @media screen and (max-width: 600px) {
     nav ul {

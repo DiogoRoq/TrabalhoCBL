@@ -590,6 +590,7 @@ border-radius: 25px;
     padding-right: 40px;
     color:#fff;
   }
+
   .input-search::placeholder{
     color:rgba(255, 255, 255, 0.555);
     font-size: 18px;

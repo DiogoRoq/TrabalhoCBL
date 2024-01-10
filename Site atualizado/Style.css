@@ -3,7 +3,7 @@
   }
 
 body { /* corpo */
-    font-family: Arial, sans-serif;
+    font-family: 'Salsa' , cursive;
     margin: 0;
     padding: 0;
     background-color: #A9D6E5;
@@ -12,12 +12,18 @@ body { /* corpo */
     display: flex;
     flex-direction: column;
 }
+main {
+    background-color: #A9D6E5;
+}
+main.dark-mode {
+    background-color: #013A63;
+}
 
-body .dark-mode {
+body.dark-mode {
     background-color: #013A63;
     color: #fff;
 }
-section .dark-mode {
+section.dark-mode {
     background-color:#013A63;
     color : #FFFFFF;
  }
@@ -50,6 +56,21 @@ header.dark-mode { /* cabeçalho */
     font-size: 1.2em;
     display: flex;
     align-items: flex;
+}
+
+nav {
+    background-color: #2C7DA0;
+}
+nav.dark-mode {
+    background-color: #012A4A;
+}
+ 
+
+a.logo-link {
+    background-color: #2C7DA0;
+}
+a.logo-link.dark-mode{
+    background-color: #012A4A;
 }
 
 nav ul { /* menu */
@@ -101,8 +122,8 @@ th { /* cabeçalho da tabela */
     background-color: #61A5C2;
     color: white;
 }
-th .dark-mode{ /* cabeçalho da tabela */
-    background-color: #89C2D9;
+th.dark-mode{ /* cabeçalho da tabela */
+    background-color: #01497C;
     color: white;
 }
 tr {
@@ -167,9 +188,9 @@ tbody.dark-mode {
     display: flex;
     display: flex;
 }
-.menu-navegacao a .dark-mode {
+.menu-navegacao a.dark-mode {
     text-decoration: none;
-    color: #0e323b; /* Cor do texto do menu */
+    color: #ffffff; /* Cor do texto do menu */
     padding: 5px 0; /* Espaçamento para a linha inferior aparecer */
     display: flex;
     display: flex;
@@ -349,6 +370,10 @@ right: 5px;
     background-color: #61A5C2;
     padding: 10px;
 }
+#news-list.dark-mode { /* lista de notícias */
+    background-color: #013A63;
+    padding: 10px;
+}
   
 
 @keyframes fadeIn { /* animação de entrada */
@@ -409,6 +434,10 @@ right: 5px;
     #news-list {
         margin-bottom: 10px;
         background-color: #A9D6E5;
+    }
+    #news-list {
+        margin-bottom: 10px;
+        background-color: #013A63;
     }
     
     footer {

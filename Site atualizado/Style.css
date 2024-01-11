@@ -414,7 +414,7 @@ right: 5px;
 @media screen and (max-width: 600px) { /* responsividade */
     
     nav ul {
-        flex-direction: flex-end;
+        justify-content: center;
     }
     nav ul li { /* itens do menu */
         display: inline;  
@@ -481,19 +481,15 @@ right: 5px;
 }
 @media screen and (max-width: 400px) {
     nav ul {
-      flex-direction: column;
-      align-items: flex-end;
+      justify-content: center;
+      display:inline-flex
+
     }
     nav ul li {
-      display: block;
-      font-size: 14px;
-      width: 100%;
-      text-align: right;
-      margin-bottom: 5px;
-    }
-    .login-button-container {
-      top: 5px;
-      right: 15px;
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 5px;
     }
     .news-image {
       width: 100%;
@@ -502,16 +498,47 @@ right: 5px;
       padding-left: 0;
     }
     .logo-link img {
-      height: 60px;
-      width: auto;
-      align-self: flex-end;
+        height: 40px; /* Reduz o tamanho do logo */
+        width: auto;
+    }
+    .carousel-container {
+        position: relative; /* Estabelece um contexto de posicionamento */
+        width: 100%; /* Ou qualquer outra largura que funcione com seu design */
+        margin: auto; /* Centraliza o carrossel */
+    }
+    #prevBtn, #nextBtn {
+        padding: 5px 8px; /* Reduza o padding */
+        max-width: 80px; /* Adicione uma largura máxima */
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+        overflow: hidden; /* Oculta qualquer texto que transborde */
+        text-overflow: ellipsis; /* Padding reduzido para telas menores */
+        font-size: px; /* Ajuste o tamanho da fonte para telas menores */
+        padding: 4px 7px;
+        max-width: 70px;
+    }
+    }
+    #prevBtn {
+        left: 10px; 
+    }
+    #nextBtn {
+        right: 20px;
     }
     #searchForm {
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      padding: 5px;
-      align-self: baseline;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-search {
+        width: 100%;
+        padding: 5px;
+        margin-right: 0;
+    }
+    #mode-toggle {
+        font-size: 12px; /* Reduz o tamanho da fonte */
+        padding: 5px 10px; /* Reduz o preenchimento */
+        margin: 5px; /* Ajusta a margem */
+        align-self: center; /* Centraliza o botão */
+        margin-top: 5px; /* Adiciona uma margem no topo */
     }
     #searchBox {
       width: 100%;
@@ -523,6 +550,12 @@ right: 5px;
       margin-bottom: 10px;
       padding: 10px;
     }
+    #prevBtn, #nextBtn {
+        padding: 10px 15px; /* Aumenta o preenchimento */
+        font-size: 16px;
+        position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%);
     footer {
       position: static;
     }
@@ -532,7 +565,7 @@ right: 5px;
     color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-border-radius: 25px;
+    border-radius: 25px;
     padding: 10px;
     cursor: pointer;
 }

@@ -374,7 +374,8 @@ tbody.dark-mode {
     border: none;
     box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
     border-radius: 25px;
-    padding: 10px 20px;
+    width: 120px; /* Adjust the width as needed */
+    height: 45px;
     cursor: pointer;
     font-size: 14px;
 }

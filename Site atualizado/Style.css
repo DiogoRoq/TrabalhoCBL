@@ -387,14 +387,6 @@ tbody.dark-mode {
     right: 0;
 }
 
-#prevBtn {
-    left: 0;
-}
-
-#nextBtn {
-    right: 0;
-}
-
 #featured-news { /* notícias em destaque */
     padding: 10px;
     margin-bottom: 20px;

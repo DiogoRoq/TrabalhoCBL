@@ -344,6 +344,7 @@ tbody.dark-mode {
     color: #ffffff; /* Icon hover color */
 }
 .carousel-container {
+    position: relative;
     max-width: 600px; /* Ajuste para o tamanho desejado */
     margin: auto;
     overflow: hidden;
@@ -359,7 +360,7 @@ max-width: 33.333%; /* Ajuste este valor com base no número de imagens visívei
 flex: 0 0 auto;
 }
 #prevBtn, #nextBtn {
-position: fixed;
+position: absolute;
 top: 15%;
 right: 93%;
 left: 93%;

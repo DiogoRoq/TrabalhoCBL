@@ -343,8 +343,11 @@ tbody.dark-mode {
 .social-icons a:hover .dark-mode {
     color: #ffffff; /* Icon hover color */
 }
-.carousel-container {
+.container-wrapper {
     position: relative;
+}
+
+.carousel-container {
     max-width: 600px;
     margin: auto;
     overflow: hidden;
@@ -369,11 +372,19 @@ tbody.dark-mode {
     background-color: #2A6F97;
     color: white;
     border: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
     border-radius: 25px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 14px;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#nextBtn {
+    right: 0;
 }
 
 #prevBtn {
